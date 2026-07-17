@@ -1,0 +1,98 @@
+==> frontier-watch-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! frontier-watch-reporter failed — continuing
+==> agentic-coding-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! agentic-coding-reporter failed — continuing
+==> production-ai-eng-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! production-ai-eng-reporter failed — continuing
+==> ai-economics-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! ai-economics-reporter failed — continuing
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+==> frontier-watch-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! frontier-watch-reporter failed — continuing
+==> agentic-coding-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! agentic-coding-reporter failed — continuing
+==> production-ai-eng-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! production-ai-eng-reporter failed — continuing
+==> ai-economics-reporter (2026-07-11)
+/Users/larry.hau/github_personal/radar/scripts/run-all.sh: line 23: /opt/homebrew/bin/claude: No such file or directory
+!! ai-economics-reporter failed — continuing
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+==> frontier-watch-reporter (2026-07-11)
+Found something worth flagging before I do anything: **a report for today's date already exists.**
+
+`reports/frontier-watch/frontier-watch-news-2026-07-11.md` was already generated — and per the coverage log, it's the *inaugural* report, covering **2026-06-27 → 2026-07-11 (today)**. Memory shows it as fully processed: coverage log updated, landscape snapshot set, predictions logged, source notes saved.
+
+That creates a real conflict with the workflow's core rule: *"Do not search for news older than the last report date."* Last report date = today. There is no new window to cover — generating another report right now would either:
+
+1. **Duplicate** the exact same 2-week window and same stories (Anthropic Fable 5/Mythos 5 restoration, OpenAI GPT-5.6 + gov't gating, Gemini 3.5 Pro delay, Grok 4.5, Meta Muse Spark 1.1, etc.), or
+2. **Fabricate** a few hours of "news" that isn't there yet, just to make today's date look fresh.
+
+Neither is useful to you.
+
+A few open items already flagged in memory *are* worth a quick check-in if you want signal today rather than a rerun:
+- **Gemini 3.5 Pro** — targeted to ship **July 17**, i.e. not yet (still 6 days out from "today").
+- **GPT-5.6 Sol** — still gated by US gov't review as of the last report; worth checking if it's hit ChatGPT GA.
+- **Mistral's teased new open-weight family** — entered early access "this month," name/specs still unconfirmed.
+
+**How do you want to play this?**
+- (a) Nothing to do — treat the existing 07-11 report as current, come back in a few days for the real next delta.
+- (b) I do a narrow, targeted check on just those 2-3 open threads (Sol GA status, Mistral naming, any Gemini 3.5 Pro pre-announcement) and append/update rather than regenerate the whole report.
+- (c) You tell me the existing report is stale/wrong and want it regenerated from scratch — in which case tell me why (e.g., it was hallucinated, not actually sourced).
+
+I'd default to (b) if you want something out of this — cheap, and it closes real open loops instead of manufacturing filler.
+==> agentic-coding-reporter (2026-07-11)
+Error: Exceeded USD budget (1.5)!! agentic-coding-reporter failed — continuing
+==> production-ai-eng-reporter (2026-07-11)
+Error: Exceeded USD budget (1.5)!! production-ai-eng-reporter failed — continuing
+==> ai-economics-reporter (2026-07-11)
+Report generated. Summary for you:
+
+## AI Economics News Report — 2026-07-11
+
+**Files written:**
+- `reports/ai-economics/ai-economics-news-2026-07-11.md` — 12 entries, covering 2026-06-27 to 2026-07-11 (first report in this series)
+- `reports/ai-economics/ai-economics-state-of-the-art.md` — new living document, full structure populated
+- Agent memory initialized (`coverage.md`, `indicators.md`, `debates.md`, `sources.md`)
+
+**The signal, unvarnished:**
+
+The capex story and the productivity story are diverging hard. $725B in hyperscaler 2026 capex (+77% YoY), 86% of US venture dollars into AI, Anthropic alone raising $65B in one quarter — against that, BLS total factor productivity *decelerated* (1.5%→0.8% in 2025), and McKinsey's own survey shows only 39% of enterprises can point to actual EBIT impact despite 88% adoption. Acemoglu still pegs the 10-year cumulative TFP gain at under 1% — an order of magnitude below Wall Street consensus.
+
+On labor: Goldman raised its displacement estimate (6-7%→9%, ~15M workers) but explicitly walked back "apocalypse" framing — net effect is a modest drag, not collapse. The "AI is killing entry-level jobs" narrative is getting contested by the Fed's own researchers, who attribute most youth unemployment to weak hiring generally, not AI (though the Atlanta Fed flags a slower-burn risk: eroding the junior-talent pipeline that trains future seniors).
+
+Most quotable: Palantir's Karp calling frontier-lab token pricing "completely, irresponsibly oversold" on live TV (stock +8%) — a Tier-3 claim with an obvious conflict of interest, but one that echoes the Fed's own concern: 50% of surveyed market contacts now flag AI as a systemic risk, up from 30% six months ago, with capex increasingly debt-funded.
+
+**Gaps flagged for next cycle** (saved to memory): AI job-postings data, median AI startup valuations, non-US geographic coverage, and named-economist searches (Autor, Restrepo, Korinek, Syverson, Rock stayed quiet this cycle — may be a search-term issue, not an actual silence).
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+==> frontier-watch-reporter (2026-07-13)
+API Error: Connection closed mid-response. The response above may be incomplete.
+!! frontier-watch-reporter failed — continuing
+==> agentic-coding-reporter (2026-07-13)
+Background tasks still running after 600s; terminating. Set CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0 to wait indefinitely.
+The report generation is running in the background — I'll let you know as soon as it's done. No action needed from you right now.
+==> production-ai-eng-reporter (2026-07-13)
+Error: Exceeded USD budget (1.5)!! production-ai-eng-reporter failed — continuing
+==> ai-economics-reporter (2026-07-13)
+Budget's essentially exhausted, so I'm stopping here rather than risk an overrun on memory-file updates — the two report files are complete and saved.
+
+**Report generated:** `reports/ai-economics/ai-economics-news-2026-07-13.md`
+**State-of-the-art updated:** `reports/ai-economics/ai-economics-state-of-the-art.md`
+
+## Headlines from this cycle (2026-07-11 → 2026-07-13)
+
+1. **Acemoglu + Autor join forces** on "Building Pro-Worker AI" (NBER w34854) — a normative reframe: current AI deployment favors substitution over augmentation due to incentives/ideology, not technological necessity. Autor's first distinct 2026 contribution.
+2. **Two independent studies (Fed Notes + Stanford/SSRN) both find no aggregate job-posting or employment decline** from AI adoption, despite genAI usage hitting 35.9% of US workers — further erodes the "fast severe displacement" camp.
+3. **Indeed Hiring Lab: AI-exposed jobs flipped from steepest declines to leading the recovery** — but 71% of that recovery is senior roles. Aggregate stability, real seniority-biased reallocation underneath.
+4. **Gap-fills from last cycle:** PitchBook supplies the AI valuation premium (~4x at Series D+, 84% at Series A); Indeed supplies job-postings data.
+5. **PIIE's Kolko** delivers a useful check on the whole field: the literature is genuinely contradictory and too immature (1-2 years of data) for confident causal claims either direction.
+6. **"Distribution matters more than magnitude"** is now the best-evidenced thesis in the debate — three independent sources (Indeed, PwC, PitchBook) all point the same way this cycle.
+
+One thing I couldn't complete: the agent-memory files (`coverage.md`, `indicators.md`, `debates.md`, `sources.md`) weren't refreshed this run due to budget exhaustion. Worth doing that update before the next cycle so dedup/continuity stays accurate — happy to do it now if you want to lift the budget cap, or first thing next time.
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md

@@ -3,7 +3,7 @@
 # Wire to cron (see README). Runs each agent headless with a cost cap.
 set -euo pipefail
 
-CLAUDE="${CLAUDE_BIN:-/opt/homebrew/bin/claude}"
+CLAUDE="${CLAUDE_BIN:-$(command -v claude || echo /opt/homebrew/bin/claude)}"
 REPO="${RADAR_REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 MODEL="${RADAR_MODEL:-sonnet}"
 BUDGET="${RADAR_BUDGET_USD:-1.50}"

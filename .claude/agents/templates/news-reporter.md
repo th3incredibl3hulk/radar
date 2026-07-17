@@ -1,0 +1,1 @@
+/Users/larry.hau/github_personal/radar/agents/templates/news-reporter.md

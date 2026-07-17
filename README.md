@@ -29,9 +29,9 @@ Each run produces a dated **delta report** (what's new since last time) and refr
 
 | Agent | File | Focus |
 |-------|------|-------|
-| **Source Auditor** | `agents/source-auditor.md` | Skeptically audits whether Radar is still reading the right sources — reviews the last report or two, pressure-tests each source list, and proposes *at most a few* high-bar changes. Recommends only; never edits the reporters. |
+| **Skeptic** | `agents/skeptic.md` | Skeptically audits whether Radar is still reading the right sources — reviews the last report or two, pressure-tests each source list, and proposes *at most a few* high-bar changes. Recommends only; never edits the reporters. |
 
-Fire it when you want to question the mix (`claude --agent source-auditor -p "Audit my sources. Today is <date>."`). It's deliberately quiet — "no change needed" is a normal, good result — and it runs on Opus because the whole value is discernment. It writes to `reports/source-audits/` and is intentionally kept **out of the weekly cron**, since it's a judgment call you invoke, not a feed.
+Fire it when you want to question the mix (`claude --agent skeptic -p "Audit my sources. Today is <date>."`). It's deliberately quiet — "no change needed" is a normal, good result — and it runs on Opus because the whole value is discernment. It writes to `reports/source-audits/` and is intentionally kept **out of the weekly cron**, since it's a judgment call you invoke, not a feed.
 
 ## Setup
 
@@ -57,7 +57,7 @@ Or invoke as a subagent from a session — each agent's description includes tri
 
 ### Scheduled (weekly, via launchd)
 
-`scripts/run-all.sh` runs all four reporters **sequentially** and regenerates `reports/weekly-digest.md` (a single index linking every report). The source-auditor is intentionally excluded — it's on-demand.
+`scripts/run-all.sh` runs all four reporters **sequentially** and regenerates `reports/weekly-digest.md` (a single index linking every report). The skeptic is intentionally excluded — it's on-demand.
 
 Install the weekly LaunchAgent (Mondays 07:00 local):
 
