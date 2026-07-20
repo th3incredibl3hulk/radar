@@ -96,3 +96,12 @@ Budget's essentially exhausted, so I'm stopping here rather than risk an overrun
 
 One thing I couldn't complete: the agent-memory files (`coverage.md`, `indicators.md`, `debates.md`, `sources.md`) weren't refreshed this run due to budget exhaustion. Worth doing that update before the next cycle so dedup/continuity stays accurate — happy to do it now if you want to lift the budget cap, or first thing next time.
 ==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+==> frontier-watch-reporter (2026-07-20)
+Error: Exceeded USD budget (1.5)!! frontier-watch-reporter failed — continuing
+==> agentic-coding-reporter (2026-07-20)
+Error: Exceeded USD budget (1.5)!! agentic-coding-reporter failed — continuing
+==> production-ai-eng-reporter (2026-07-20)
+Error: Exceeded USD budget (1.5)!! production-ai-eng-reporter failed — continuing
+==> ai-economics-reporter (2026-07-20)
+Error: Exceeded USD budget (1.5)!! ai-economics-reporter failed — continuing
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
