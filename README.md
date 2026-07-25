@@ -72,6 +72,7 @@ The installer resolves its own absolute path, so **after you move `radar/` into 
 Notes:
 - It runs as your GUI user, so it inherits your Claude Code subscription login. On **API billing**, add `ANTHROPIC_API_KEY` to the `EnvironmentVariables` block in `install-launchd.sh`.
 - launchd won't fire while the Mac is asleep, but a **missed weekly run executes on the next wake** — so a closed laptop delays, rather than skips, the digest.
+- After the digest is written, the script `git add`s `reports/`, commits, and pushes to `origin`. It's a GUI LaunchAgent, so it inherits your login session's `SSH_AUTH_SOCK` — no extra setup needed for SSH-based push. A failed push (offline, auth issue) is logged but doesn't fail the run; the commit stays local until you push it manually.
 - Logs go to `scripts/run.log`.
 
 Typical cost: ~$0.30–0.80 per agent per run (Sonnet).

@@ -54,3 +54,16 @@ DIGEST="${REPO}/reports/weekly-digest.md"
 } > "${DIGEST}"
 
 echo "==> Digest written to ${DIGEST}"
+
+# Push this run's reports to GitHub so they're readable/retained there.
+git add reports/
+if git diff --cached --quiet; then
+  echo "==> No report changes to commit"
+else
+  git commit -m "Radar: reports for ${TODAY}"
+  if git push origin HEAD; then
+    echo "==> Pushed to GitHub"
+  else
+    echo "!! git push failed — changes committed locally only, push manually"
+  fi
+fi
