@@ -5,7 +5,12 @@ metadata:
   type: reference
 ---
 
-Snapshot as of 2026-07-20. Verify current state before quoting in future reports — names and versions have been shifting fast.
+Snapshot as of 2026-07-27. Verify current state before quoting in future reports — names and versions have been shifting fast.
+
+## 2026-07-27 update
+- **Claude Opus 5** launched 2026-07-24: same $5/$25 per-M pricing as Opus 4.8, "near Fable 5 intelligence at half the price," Fast mode (2.5x speed/2x price), beta mid-conversation tool changes + safety-classifier auto-fallback. Default on Max, top tier on Pro. Remains "substantially behind Mythos 5" on cybersecurity exploitation specifically. Added to GitHub Copilot same day.
+- **MCP spec still NOT shipped** as of 2026-07-27 — RC status unchanged, final ship still scheduled 2026-07-28. Confirm actual status next cycle.
+- Cognition/Devin: **FedRAMP Class D (High) In-Process confirmed** (independently verified via FedRAMP Marketplace, no longer just secondary-sourced).
 
 ## Models (frontier — cross-reference with frontier-watch-reporter, don't duplicate deep analysis)
 - Claude: Sonnet 5 (launched 2026-06-30, new tokenizer, pricing ramps 2026-08-31), Opus 4.8, "Fable 5" (general-purpose Mythos-class model, announced 2026-06-09; free-plan promotion ended 2026-07-19, now permanently bundled for Max/Team-Premium/legacy-Enterprise-Premium seats, metered $10/$50 per M tokens for Pro/standard seats), "Claude Mythos 5" (confirmed, same June 9 announcement as Fable 5 — functionally identical but with cybersecurity/biomedical safety restrictions lifted; restricted to Project Glasswing partners + vetted biomedical researchers; NOT an unannounced preview, despite being flagged that way in the 2026-07-11/07-13 reports — correct this going forward).

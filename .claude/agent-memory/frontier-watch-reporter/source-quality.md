@@ -5,17 +5,17 @@ metadata:
   type: project
 ---
 
-From the 2026-07-11 (first) report:
+From the 2026-07-11 (first) report, reconfirmed 2026-07-31:
 
 **High value:**
-- Direct WebSearch queries per-lab ("<lab> new model release <month year>") surfaced primary lab blog posts (anthropic.com/news, x.ai/news, ai.meta.com/blog, mistral.ai/news) reliably and quickly — more efficient than trying to browse newsletter sites directly.
-- TechCrunch, Axios, and Bloomberg consistently had the clearest first-party-adjacent reporting on release timing and pricing; good default secondary sources.
-- WebFetch directly against anthropic.com/news worked well to disambiguate confusing model-naming (Fable vs. Mythos vs. Opus vs. Sonnet) — worth doing a direct fetch when naming is unclear rather than relying on search snippets.
-- Artificial Analysis (artificialanalysis.ai) and SWE-bench.com / BenchLM.ai are the go-to benchmark aggregators for the "who's ahead" table — check these directly each cycle rather than searching generically for "AI benchmark."
+- Direct WebSearch queries per-lab ("<lab> new model release <month year>") surfaced primary lab blog posts (anthropic.com/news, x.ai/news, ai.meta.com/blog, mistral.ai/news, blog.google, newsroom.amd.com) reliably and quickly.
+- TechCrunch, CNBC, Bloomberg, and AMD/company newsroom press releases consistently had the clearest first-party-adjacent reporting on release timing, pricing, and deal terms (e.g. the AMD-Anthropic deal was best sourced directly from newsroom.amd.com).
+- llm-stats.com, BenchLM.ai, and swebench.com are reliable benchmark-aggregator hits for "who's ahead" data (SWE-bench Verified/Pro/Lite splits) — check these directly each cycle.
+- Digitalapplied.com's "wave tracker" style posts (e.g. the July 2026 open-weight wave roundup) were unusually good at synthesizing a multi-lab story (Kimi K3 + Inkling + Mistral + MiniMax) in one search hit — worth searching for "<topic> wave" or "<topic> tracker" style queries when multiple labs move at once.
 
 **Lower value / caution:**
-- Some "Gemini 3.5 Pro" spec details (2M context, Deep Think, pricing) are sourced only from leak/rumor accounts (X posts, "leaked" blog posts) — treat these as unconfirmed until Google's own post appears. Flagged explicitly in the 2026-07-11 report; verify on next run once the model actually ships (targeted July 17, 2026).
-- Did not get direct access to newsletter-tier sources (Import AI, Interconnects, The Batch, SemiAnalysis, AInews/smol.ai) via search this run — search results surfaced mostly SEO/aggregator sites (releasebot.io, felloai.com, coursiv.io) rather than the actual newsletters. Consider WebFetch-ing these newsletter homepages/archives directly on future runs instead of relying on WebSearch to surface them.
-- Meta's model naming/timeline is confusing (Avocado → absorbed into Muse Spark line under Meta Superintelligence Labs) — double check current naming each cycle before citing.
+- Low-quality SEO aggregators (skycrumbs.com, coursiv.io, releasebot.io) sometimes synthesize claims (e.g. a "DeepMind prospective credit assignment paper") that could not be verified against any primary source on follow-up search — treat single-aggregator-sourced technical/research claims as unconfirmed until a primary source (arxiv.org, deepmind.google) is found. Dropped one such claim entirely in the 2026-07-31 report rather than report it with a hedge.
+- Still did not get direct hits on newsletter-tier sources (Import AI, Interconnects, The Batch, SemiAnalysis, AInews/smol.ai) via generic WebSearch two cycles in a row — consider WebFetch-ing their homepages/archives directly next run instead of relying on search snippets to surface them.
+- When a last report is >2 weeks old (as it was this cycle: 20 days), a strict "most recent 2 weeks only" window creates a coverage gap (here, 07-11 to 07-17) — resolved by backfilling only stories foundational to an in-window follow-on (Inkling/Kimi K3 origin dates, since their public-weights release was in-window). Worth deciding proactively next time a gap appears rather than re-deriving the judgment call.
 
-**Tactic that worked well:** running 4-5 parallel WebSearch calls per batch (one per lab/topic) rather than sequential single searches — much faster convergence on the two-week window's major stories.
+**Tactic that worked well:** 5-6 parallel WebSearch calls per batch (one per lab/topic), across 3 batches total (labs → open-weight/capex/papers/benchmarks → compute deals/gov't status follow-ups) — converged on all major stories for a ~$1.5 total budget spend on a $2 cap. Papers/research searches remain the weakest link — two cycles running, generic "landmark paper" searches surface either nothing citable or low-quality aggregator synthesis; consider going directly to arxiv.org listing pages or Hugging Face Daily Papers next time instead of keyword search.

@@ -6,7 +6,19 @@ metadata:
 ---
 
 ## Last report
-- **2026-07-20** — `reports/agentic-coding/agentic-coding-news-2026-07-20.md` — covered 2026-07-14 to 2026-07-20 (one week; prior report was 2026-07-13). 9 entries.
+- **2026-07-27** — `reports/agentic-coding/agentic-coding-news-2026-07-27.md` — covered 2026-07-21 to 2026-07-27 (one week; prior report was 2026-07-20). 7 entries.
+
+## Stories filed as of 2026-07-27 (do not re-report unless material update)
+- **Claude Opus 5 launched 2026-07-24** — cheaper cost/capability-toggle sibling to Fable 5, same $5/$25 pricing as Opus 4.8, "near Fable 5 intelligence at half the price," Fast mode (2.5x speed/2x price), mid-conversation tool changes + safety-classifier auto-fallback (both beta). Now default on Max, top tier on Pro. GitHub shipped it into Copilot same day (July 24).
+- **MCP spec did NOT ship this cycle** — still release candidate as of 2026-07-27, final publication remains scheduled for 2026-07-28 (one day after this report). Beta SDKs (Python/TS/Go/C#) live. GitHub's own MCP Server added next-spec support July 23. **Must confirm actual ship status next cycle (2026-08-03 or whenever next report runs) — this is the 3rd cycle open.**
+- **Kimi K3 one-week-later reading**: #4 on Artificial Analysis Intelligence Index (57.11) behind Fable 5 (59.86) and both GPT-5.6 Sol variants; leads SWE Marathon (42.0), BrowseComp (91.2), Automation Bench (30.8) outright. Full public weights promised by 2026-07-27.
+- **Cognition/Devin FedRAMP Class D (High) In-Process** — confirmed independently via FedRAMP Marketplace listing (previously flagged unconfirmed in 2026-07-20 report). Devin Fusion (multi-model harness, announced June 29) still not independently re-covered as new — predates window.
+- **GitHub Copilot cluster (July 20-24)**: AI-credit cost-center pools + usage dashboard (billing/governance features), cloud agent for Linear reached GA, agent-automation controls for GitHub Issues in public preview, Claude Opus 5 added July 24.
+- **Simon Willison surfaced a July 21 fireside chat** with Anthropic's Cat Wu and Thariq Shihipar (Claude Code team) at AI Engineer World's Fair — security, evals, tool design, internal dogfooding. Referenced as a source to revisit, not deeply summarized (secondhand only).
+
+## Explicitly checked, no material update this cycle (2026-07-27)
+- **SWE-Bench Pro cleaned re-run**: OpenAI has NOT published one yet. Credibility warning from 2026-07-20 stands unchanged.
+- **China/Alibaba/MIIT dispute**: no escalation since the original July 10 ban. No new regulatory action, no reciprocal Anthropic move, no other Chinese firm followed Alibaba publicly. Worth only a periodic check now, not an active watch item, unless something moves.
 
 ## Stories filed as of 2026-07-20 (do not re-report unless there's a material update)
 - **OpenAI retracted its SWE-Bench Pro recommendation** after an audit (agent-assisted flagging + human annotation campaign) found ~27.4-34.1% of the 731 public tasks broken, mostly tests that are overly strict and fail functionally-correct code. Second major SWE-bench-family credibility hit in 2026 (after SWE-bench Verified deprecated in February for contamination/saturation). Published at openai.com/index/separating-signal-from-noise-coding-evaluations/. **Treat all recent SWE-Bench Pro leaderboard numbers as provisional until re-run on a cleaned task set.**

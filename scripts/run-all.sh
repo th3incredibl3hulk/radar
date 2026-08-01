@@ -6,7 +6,7 @@ set -euo pipefail
 CLAUDE="${CLAUDE_BIN:-$(command -v claude || echo /opt/homebrew/bin/claude)}"
 REPO="${RADAR_REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 MODEL="${RADAR_MODEL:-sonnet}"
-BUDGET="${RADAR_BUDGET_USD:-1.50}"
+BUDGET="${RADAR_BUDGET_USD:-2.00}"
 TODAY="$(date +%Y-%m-%d)"
 
 AGENTS=(
@@ -23,7 +23,7 @@ for agent in "${AGENTS[@]}"; do
   "${CLAUDE}" --agent "${agent}" \
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
-    --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" \
+    --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" "Agent(article-summarizer)" \
     --print \
     -p "Generate today's report. Today is ${TODAY}." \
     || echo "!! ${agent} failed — continuing"

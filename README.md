@@ -25,6 +25,8 @@ Each run produces a dated **delta report** (what's new since last time) and refr
 
 `agents/templates/news-reporter.md` defines the shared Markdown format, quality bar, and workflow. Each agent inherits it and adds its own sources, tags, and state-of-the-art structure.
 
+Each reporter delegates full-article fetches to `agents/article-summarizer.md`, a Haiku subagent scoped to `WebFetch` only. Instead of the reporter (Sonnet) ingesting every full fetched page itself, it hands the URL off and gets back a compact structured summary — keeping raw page text out of the expensive model's context. This was the biggest cost driver in the original design and the main fix for reporters that were blowing their per-run budget.
+
 ### The skeptic (on-demand, not scheduled)
 
 | Agent | File | Focus |
@@ -93,4 +95,5 @@ Adding a domain is one agent file + one `reports/<domain>/` dir + a line in `run
 1. **Paths** — agents write to `reports/<domain>/` and remember in `.claude/agent-memory/<agent>/`. Adjust to your layout.
 2. **Sources** — prune or add to each agent's tiered list as your interests sharpen.
 3. **Cadence** — weekly by default; 2-week rolling window. Change in the agents and cron.
-4. **Model** — Sonnet is the cost/quality sweet spot; bump to Opus for deeper synthesis.
+4. **Model** — Sonnet is the cost/quality sweet spot; bump to Opus for deeper synthesis. Article fetching runs on Haiku via `article-summarizer` regardless of the reporter's own model.
+5. **Budget** — `RADAR_BUDGET_USD` in `scripts/run-all.sh` (default `2.00`/agent/run). Raise it if a reporter is still hitting the cap after the Haiku delegation change.

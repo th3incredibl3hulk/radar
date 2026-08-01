@@ -67,6 +67,16 @@ Use the domain-specific sources and search terms. The source lists are tiered on
 
 Always search multiple tiers for broad coverage.
 
+**Delegate full-article fetches — don't ingest them yourself.** Once WebSearch surfaces a candidate URL and you need the full page (not just the search snippet), dispatch it to the `article-summarizer` subagent instead of calling `WebFetch` directly.
+
+The tool that does this dispatch is called `Agent`, and unlike `WebFetch`/`WebSearch` it is **not** pre-listed for you at session start — you must explicitly call `ToolSearch` with query `"Agent"` once, near the beginning of this step, before it becomes callable. Do this even though nothing prompts you to; skipping it is the single most likely way this delegation silently fails to happen at all.
+
+Once loaded, call `Agent` with:
+```
+{"description": "<short label>", "subagent_type": "article-summarizer", "prompt": "<the URL> — <one sentence: what angle/question you want answered>"}
+```
+It runs on a cheap model in its own isolated context and returns a compact structured summary — that's what you use to write the report entry, not the raw page. This keeps full page text out of your own context, which is the largest cost driver in this workflow. Dispatch multiple candidates in parallel when your list is large; each is independent. Only fetch a page yourself with `WebFetch` if `Agent`/`article-summarizer` is genuinely unavailable — don't double-fetch, and don't quietly skip delegation just because WebSearch snippets seemed sufficient for some entries.
+
 ### Step 3: Generate the News Report
 
 Write the report file using the format above. Include 5–15 entries depending on news volume. Order entries by significance, not chronology.

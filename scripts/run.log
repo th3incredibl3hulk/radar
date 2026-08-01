@@ -105,3 +105,36 @@ Error: Exceeded USD budget (1.5)!! production-ai-eng-reporter failed — continu
 ==> ai-economics-reporter (2026-07-20)
 Error: Exceeded USD budget (1.5)!! ai-economics-reporter failed — continuing
 ==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+==> frontier-watch-reporter (2026-07-27)
+Budget limit reached ($1.53 of $1.5); stopping background agents.
+Error: Exceeded USD budget (1.5)!! frontier-watch-reporter failed — continuing
+==> agentic-coding-reporter (2026-07-27)
+The report is done. Quick summary:
+
+## Agentic Coding News — 2026-07-27
+**File:** `reports/agentic-coding/agentic-coding-news-2026-07-27.md` (covers 2026-07-21 → 2026-07-27)
+
+**Top stories:**
+1. **Claude Opus 5 launched (July 24)** — pitched as near-Fable-5 intelligence at half the price, same $5/$25 per-M-token pricing as Opus 4.8, with a Fast mode toggle and beta mid-conversation tool-swapping / safety-classifier auto-fallback. GitHub shipped it into Copilot same-day.
+2. **MCP spec has NOT shipped yet** — still RC as of today; final publication remains on track for tomorrow, 2026-07-28. Beta SDKs are out; GitHub's MCP Server already pre-adopted next-spec support.
+3. **Kimi K3, one week in** — settled at #4 on Artificial Analysis's Intelligence Index, but leads outright on long-horizon coding (SWE Marathon) and agentic-web tasks.
+4. **Devin FedRAMP Class D (High) "In-Process"** — now independently confirmed (was unverified rumor in the last two cycles).
+5. **Dead-end checks, reported as such rather than silently dropped:** OpenAI still hasn't published a cleaned SWE-Bench Pro re-run; the China/Alibaba Claude Code dispute hasn't escalated since the July 10 ban.
+6. GitHub Copilot shipped a batch of billing/governance + agent-automation features (July 20–24); Simon Willison surfaced a Claude Code team fireside chat (July 21).
+
+State-of-the-art doc and coverage-log/tool-versions memory were updated. Note: the agent ran low on budget and did **not** update `benchmarks.md`, `themes.md`, or `sources.md` in memory this cycle — worth a light follow-up pass next time to fold in the Kimi K3 benchmark refresh and close out those threads.
+
+We're also down to ~$0.08 of the session's $1.50 budget, so I'd hold off on launching further agent work until that resets.
+==> production-ai-eng-reporter (2026-07-27)
+Background tasks still running after 600s; terminating. Set CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0 to wait indefinitely.
+The report generation is running in the background (the production-ai-eng-reporter agent is researching and writing today's delta report plus updating the living state-of-the-art doc and memory). I'll let you know as soon as it's done — no need to poll in the meantime.
+==> ai-economics-reporter (2026-07-27)
+Error: Exceeded USD budget (1.5)!! ai-economics-reporter failed — continuing
+==> Digest written to /Users/larry.hau/github_personal/radar/reports/weekly-digest.md
+[main b7a4015] Radar: reports for 2026-07-27
+ 5 files changed, 186 insertions(+), 10 deletions(-)
+ create mode 100644 reports/agentic-coding/agentic-coding-news-2026-07-27.md
+ create mode 100644 reports/ai-economics/ai-economics-news-2026-07-27.md
+To github.com:th3incredibl3hulk/radar.git
+   6085bd6..b7a4015  HEAD -> main
+==> Pushed to GitHub
