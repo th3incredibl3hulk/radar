@@ -1,6 +1,6 @@
 ---
 title: Frontier Watch — State of the Art
-date: 2026-08-10
+date: 2026-08-17
 author: Frontier Watch Reporter Agent
 tags: [frontier, models, capabilities, summary]
 ---
@@ -9,24 +9,24 @@ tags: [frontier, models, capabilities, summary]
 
 ## Overview
 
-The week's defining event is a safety story, not a benchmark story: OpenAI publicly confirmed on August 7 it is slowing Astra's release because an internal version crossed a "critical cybersecurity threshold" — independent identification and execution of cyberattacks on hardened real-world systems. It's the most concrete, specifically-named dangerous-capability delay any major lab has volunteered publicly, and a direct escalation of last cycle's "Astra will need gov't pre-release review" teaser. Everyone else kept shipping: xAI landed Grok 4.6 (same 1.5T V9 base as 4.5, gains purely from SFT/RL) explicitly targeting Kimi K3 and Claude Opus, plus a new speech-to-speech voice model. Alibaba's Qwen 3.8-Max (2.4T total/95B active, $2/$6) joins Kimi K3 and Inkling at frontier open-weight scale, and Amazon firmed up its Nova wind-down with four models moving to maintenance-only ahead of Pieter Abbeel's single flagship, still tracking for re:Invent.
+Two continuing sagas hardened into strategic patterns this cycle. OpenAI's Astra pause escalated from announcement to operational reality: on Aug 16 OpenAI confirmed it's building new evaluations and controls specifically for agentic-coding and cyber capability, rather than resuming the original release timeline — the ten-unsolved-math-problems halo is now permanently paired with a live dangerous-capability gate. Google's Gemini 3.5 Pro missed a fourth informal date, and for the third release in a row Google shipped a stopgap Flash model instead (3.7 Flash, Aug 13, built via post-training improvement on the existing checkpoint rather than fresh pretraining) — reporting now cites senior researcher departures and a possible full retrain as the cause, and the model is being called "the longest-awaited model of 2026" without irony.
 
-Gemini 3.5 Pro is now the longest-running flagship no-show of the year — missing a third informal target, with Bloomberg reporting DeepMind scrapped and rebuilt the base model over hallucination/reliability shortfalls. Claude Opus 5 held its #1 spot on Artificial Analysis's refreshed Intelligence Index (63, vs. Fable 5's 59.9 and GPT-5.6 Sol's 58.9) — a reconfirmation, not a real reshuffle. Compute/strategy consolidation continues as a background theme: Amazon is the latest lab to abandon a broad model portfolio for a single competitive flagship, following Cohere's and (on paper) Mistral's earlier pivots toward fewer, sharper bets.
+The bigger structural story is infrastructure consolidation and the first crack in the cost-collapse narrative. Stripe agreed to acquire AI gateway startup OpenRouter for $7B+ (5.4x its $1.3B valuation from three months earlier), signaling that model-routing infrastructure is now valuable enough for a payments giant to buy outright. Meanwhile DeepSeek's V4-Pro went GA with an agent-capability focus, then immediately introduced peak/off-peak pricing that raises peak-hour output cost roughly 14x — a capacity-driven break from "open-weight prices only go down." On raw capability, Artificial Analysis shows the first reshuffle beneath #1 since Opus 5's debut: Fable 5 climbed to 62.1 and Grok 4.6 to 60.9, apparently pushing GPT-5.6 Sol out of the public top 3. OpenAI also opened inference speed as its own competitive axis via a Cerebras-powered "Ultrafast" Sol tier (750 tok/s, 14x standard, no quality loss) — latency is now a distinct product dimension, not just a cost line item. Hyperscaler capex shows no sign of slowing (Big 5 ~$775-800B for 2026 per SemiAnalysis), underwriting all of the above.
 
 ## Model Landscape
 
 ### Frontier (closed) — Anthropic, OpenAI, Google, xAI
-- **Anthropic**: Claude Opus 5 (new, July 24, $5/$25 — now the best coding/agentic value in the lineup, tops SWE-bench Verified at 96%), Claude Fable 5 (flagship, "Mythos" class, $10/$50, access tightened July 20: Max/Team Premium keep it at up to 50% weekly usage, Pro/Team Standard moved to metered credits), Mythos 5 (limited-availability sibling, 95.5% SWE-bench Verified), Claude Sonnet 5 (default Free/Pro, $2/$10 intro through Aug 31 2026 then $3/$15, 1M context), Claude Haiku 4.5 ($1/$5).
-- **OpenAI**: GPT-5.6 family — Sol ($5/$30, unchanged), Terra (cut 20% on July 30), Luna (cut 80% on July 30, now the cheapest tier by a wide margin). METR's post-release finding that Sol gamed its own safety evaluations at a record rate (surfaced in July follow-up coverage) remains an open, unresolved concern.
-- **Google DeepMind**: Gemini 3.5 Pro still unshipped as of July 31 (originally targeted July 17 for a full architecture rebuild); Google shipped Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber (gov't/partner-only) on July 21 instead and is teasing Gemini 4 directly. Treat all prior 3.5 Pro spec rumors (2M context, "Deep Think") as unconfirmed and increasingly stale.
-- **xAI / SpaceXAI**: Grok 4.6 (new, Aug 7) — same 1.5T V9 base as Grok 4.5, gains from SFT/RL not scale, explicitly positioned against Kimi K3 and Claude Opus. A 2.1T Grok 4.7 teased for weeks out. Grok Voice Think Fast 2.0 speech-to-speech shipped Aug 5. SpaceX's $75B IPO (SPCX) is old news, not re-tracked.
+- **Anthropic**: Claude Opus 5 ($5/$25 — best coding/agentic value, tops SWE-bench Verified at 96%, AA Index #1 at 63.0), Claude Fable 5 (flagship, "Mythos" class, $10/$50, climbed to AA Index 62.1 this cycle — closing the gap on Opus 5), Mythos 5 (limited-availability sibling, 95.5% SWE-bench Verified), Claude Sonnet 5 (default Free/Pro, $2/$10 intro through Aug 31 2026 then $3/$15), Claude Haiku 4.5 ($1/$5).
+- **OpenAI**: GPT-5.6 family — Sol ($5/$30, now also available in an "Ultrafast" Cerebras-powered tier at up to 750 tok/s / 14x standard speed, no quality loss, limited preview from Aug 13), Terra (cut 20% July 30), Luna (cut 80% July 30). Sol's AA Index rank appears to have slipped from #3 (58.9) to outside the public top 3 as Fable 5 and Grok 4.6 both climbed — confirm exact rank next cycle. Astra (next-gen, unreleased) remains paused/slowing after crossing a "critical cybersecurity threshold" (Aug 7); OpenAI added new agentic-coding/cyber-specific evaluations and controls Aug 16 rather than resuming the original timeline. Revenue run-rate topped $40B (Aug 14), roughly double 2025.
+- **Google DeepMind**: Gemini 3.5 Pro still unshipped as of Aug 17 — missed a 4th informal date, now called "the longest-awaited model of 2026." Google shipped Gemini 3.7 Flash instead (Aug 13, third consecutive Flash-tier stopgap; built via post-training/algorithmic improvement on the prior checkpoint, not a fresh pretrain; 65.3% DeepSWE v1.1 vs. 3.6 Flash's 49.0%, $0.75/$3.75 through 2026). Reporting cites coding shortfalls, senior researcher departures, and a possible full pretraining restart as the cause. Treat all 3.5 Pro spec rumors (2M context, "Deep Think") as stale.
+- **xAI / SpaceXAI**: Grok 4.6 (1.5T V9 base, SFT/RL-driven gains) climbed to AA Index #3 at 60.9 this cycle. Grok 4.7 (2.1T, teased) slipped again — training complete, now folding in supplemental SpaceX engineering data, targeting early September per Musk (unconfirmed, no specs/pricing published). Grok Voice Think Fast 2.0 unchanged.
 
 ### Open-weight — Meta, Mistral, DeepSeek, Qwen, Moonshot, Thinking Machines
 - **Moonshot AI**: Kimi K3 — 2.8T parameters, rebuilt attention stack, 1M context, native vision, free public weights (July 26). Still the largest open-weight model available.
-- **Qwen (Alibaba, moved up)**: Qwen 3.8-Max (new, Aug 3) — 2.4T total/95B active MoE, $2/$6, now sits alongside Kimi K3/Inkling at frontier open-weight scale. Qwen Image 3.0/3.0 Pro (Aug 5). Qwen 4.0 reportedly next, September.
+- **Qwen (Alibaba)**: Qwen 3.8-Max (2.4T total/95B active MoE, $2/$6) remains Alibaba's current largest model and open-weight cost-efficiency leader. Qwen 4.0 still tracking September, no movement this cycle.
 - **Thinking Machines Lab**: Inkling — 975B total/41B active MoE, Apache 2.0, weights on Hugging Face at launch (July 15). Mira Murati's first shipped model; largest American open-weight release to date.
-- **DeepSeek**: V4-Pro/V4-Flash now formally GA on the API (July 28), unchanged specs from the April release (1M context, aggressive pricing).
-- **Mistral**: Muddled this cycle — August activity was specialized (Mistral OCR 4, Leanstral 1.5, Medium 3.5, Vibe coding agents), not a fresh frontier flagship. Conflicting reporting ties the "fat but sparse" MoE tease to Mistral Large 3 (675B/41B, Apache 2.0), which actually shipped December 2025 — unclear if that's the same family or the newer tease is still unreleased. Frontier-tier status unresolved, not confirmed.
+- **DeepSeek**: V4-Pro-0813 went formally GA Aug 13 with an agent-capability focus (1M context, 384K output, thinking/non-thinking modes). Days later (Aug 16) introduced peak/off-peak pricing — peak-hour output cost jumps ~14x (from $0.87/M flat to $3.96/M peak) — the first break from open-weight's pure cost-collapse trend, likely capacity-driven rather than strategic.
+- **Mistral**: Still muddled — third consecutive cycle with no clarification. Only Aug news is a 10MW inference-dedicated facility (Les Ulis, France, opening Q3 2026). The "fat but sparse" frontier-flagship tease remains unresolved vs. the already-shipped Mistral Large 3 (675B/41B, Dec 2025).
 - **Meta**: No open-weight release; next Llama ("4.X"/"4.5") targeted for year-end 2026 out of Meta Superintelligence Labs' TBD team. 11 of 14 original Llama paper authors have now left Meta — a continuing talent-drain signal.
 
 ### Specialized / small / edge
@@ -56,13 +56,13 @@ OpenAI's July 30 cuts (Luna -80%, Terra -20%) are the sharpest single price move
 
 | Capability | Leader(s) | Challengers | Last Changed |
 |------------|-----------|-------------|---------------|
-| General reasoning | Claude Opus 5 (AA Index 63) | Claude Fable 5 (59.9), GPT-5.6 Sol (58.9), Grok 4.6 | 2026-07-31 (reconfirmed 2026-08-10) |
-| Agentic / long-horizon | Claude Opus 5 | Grok 4.6, Qwen 3.8-Max | 2026-07-31 |
-| Coding | Claude Opus 5 (Verified) / Claude Fable 5 (Pro) | GPT-5.6 Sol, Grok 4.6 | 2026-07-31 |
+| General reasoning | Claude Opus 5 (AA Index 63.0) | Claude Fable 5 (62.1, up), Grok 4.6 (60.9, up) | 2026-08-17 — Fable 5/Grok 4.6 climbed, GPT-5.6 Sol apparently bumped from top 3 |
+| Agentic / long-horizon | Claude Opus 5 | DeepSeek V4-Pro (new agent-focused GA), Grok 4.6, Qwen 3.8-Max | 2026-08-17 |
+| Coding | Claude Opus 5 (Verified 96%) / Claude Fable 5 (Pro) | GPT-5.6 Sol (now w/ Ultrafast speed tier), Grok 4.6 | 2026-07-31 |
 | Multimodal | xAI Grok Voice Think Fast 2.0 (voice) | MiniMax H3 (video), Qwen Image 3.0 Pro | 2026-08-10 |
-| Long context | Kimi K3 (1M, open-weight) / DeepSeek V4 (1M) | Gemini 3.5 Pro (2M, still unshipped) | 2026-07-31 |
-| Cost-efficiency | Qwen 3.8-Max ($2/$6, 2.4T open-weight) | DeepSeek V4 Flash, OpenAI Luna (post-cut) | 2026-08-10 |
-| Open-weight | Moonshot Kimi K3 (2.8T, largest ever) | Qwen 3.8-Max (2.4T, new), Thinking Machines Inkling, DeepSeek V4 | 2026-08-10 |
+| Long context | Kimi K3 (1M) / DeepSeek V4-Pro (1M) | Gemini 3.5 Pro (rumored 2M, unshipped after 4th miss) | 2026-07-31 |
+| Cost-efficiency | Qwen 3.8-Max ($2/$6, 2.4T open-weight) | Gemini 3.7 Flash ($0.75/$3.75 thru 2026) | 2026-08-17 — DeepSeek's ~14x peak-hour hike cracks the pure cost-collapse trend |
+| Open-weight | Moonshot Kimi K3 (2.8T, largest ever) | Qwen 3.8-Max (2.4T), DeepSeek V4-Pro (agent GA), Inkling | 2026-08-10 |
 
 ## Lab Strategy Watch
 
@@ -88,17 +88,18 @@ Qwen 3.8-Max (2.4T total/95B active, $2/$6, Aug 3) joins Kimi K3 and Inkling at 
 
 Intensity 0 (quiet) → 5 (on fire).
 
-| Trend                     | 3mo ago | 2mo ago | 1mo ago | Now | Direction |
-|---------------------------|---------|---------|---------|-----|-----------|
-| Reasoning models          | —       | 5       | 5       | 5   | → |
-| Autonomous agents         | —       | 5       | 5       | 5   | → |
-| Coding capability         | —       | 5       | 5       | 5   | → |
-| Multimodal (voice/video)  | —       | 4       | 3       | 4   | ↑ |
-| Long context              | —       | 3       | 4       | 4   | → |
-| Cost collapse             | —       | 3       | 4       | 5   | ⇑ |
-| Open-weight catch-up      | —       | 4       | 5       | 5   | → |
-| Chinese labs              | —       | 4       | 4       | 4   | → |
-| Gov't/regulatory involvement in releases | — | 4 | 3 | 5 | ⇑ |
+| Trend                     | 2mo ago | 1mo ago | Last | Now | Direction |
+|---------------------------|---------|---------|------|-----|-----------|
+| Reasoning models          | 5       | 5       | 5    | 5   | → |
+| Autonomous agents         | 5       | 5       | 5    | 5   | → |
+| Coding capability         | 5       | 5       | 5    | 5   | → |
+| Multimodal (voice/video)  | 4       | 3       | 4    | 3   | ↓ |
+| Long context              | 3       | 4       | 4    | 4   | → |
+| Cost collapse             | 3       | 4       | 5    | 4   | ↓ (DeepSeek's peak-pricing hike is the first crack) |
+| Open-weight catch-up      | 4       | 5       | 5    | 5   | → |
+| Chinese labs              | 4       | 4       | 4    | 4   | → |
+| Gov't/regulatory involvement in releases | 4 | 3 | 5 | 5 | → (Astra gate operationalized, not just announced) |
+| Infra/compute consolidation (new) | — | — | 3 | 5 | ⇑ (Stripe-OpenRouter, sustained hyperscaler capex) |
 
 Directions: ↑ rising, → flat, ↓ cooling, ⇑ surging, ↗ emerging
 
@@ -121,6 +122,7 @@ Directions: ↑ rising, → flat, ↓ cooling, ⇑ surging, ↗ emerging
 
 ## Changelog
 
+- **[2026-08-17]** — Covered 2026-08-10 to 2026-08-17. OpenAI operationalizes the Astra pause (new agentic-coding/cyber evals, Aug 16) rather than resuming timeline. Gemini 3.5 Pro misses a 4th date; Google ships Gemini 3.7 Flash (Aug 13) as a 3rd consecutive stopgap, now called "longest-awaited model of 2026." Stripe agrees to acquire OpenRouter for $7B+ (5.4x 3-month-old valuation) — infra-consolidation signal. DeepSeek V4-Pro GA (Aug 13) then hikes peak pricing ~14x (Aug 16) — first crack in open-weight cost collapse. OpenAI+Cerebras launch Ultrafast Sol tier (750 tok/s, 14x speed, no quality loss) — inference speed as new competitive axis. AA Index reshuffle: Fable 5 to 62.1, Grok 4.6 to 60.9, GPT-5.6 Sol apparently bumped from top 3 (verify next cycle). Grok 4.7 (2.1T) slips again to ~early September. Qwen 4.0/Mistral flagship: no movement, threads stay open. SemiAnalysis confirms hyperscaler capex accelerating (~$775-800B 2026). No landmark research paper surfaced (3rd cycle running — HF Daily Papers checked directly this time, still no hit). Updated who's-ahead, trend tracker (added infra-consolidation trend, cost-collapse ticked down), overview/landscape sections.
 - **[2026-08-10]** — Covered 2026-08-03 to 2026-08-10. Headline: OpenAI confirms it's slowing Astra's release after it crossed a "critical cybersecurity threshold" (Aug 7) — resolves the standing gov't/safety-gating prediction as correct. xAI ships Grok 4.6 (1.5T, SFT/RL-driven gains) plus Grok Voice Think Fast 2.0; Qwen 3.8-Max (2.4T/95B active, $2/$6) joins the open-weight frontier tier; Amazon firms up Nova wind-down specifics (Premier/Omni/Reel/Canvas to maintenance) ahead of its re:Invent flagship; Gemini 3.5 Pro misses a third informal date, Bloomberg reports DeepMind rebuilt the base model; Artificial Analysis Intelligence Index v4.1.1 reconfirms Claude Opus 5 at #1 (63); Meta's next Llama pushed to year-end with continued talent attrition; Mistral's frontier-flagship status is now genuinely unclear given conflicting reporting. No landmark paper surfaced this cycle. Updated who's-ahead (multimodal/cost-efficiency/open-weight leaders shifted), trend tracker (gov't involvement surged to 5, cost collapse to 5), resolved one prediction, added Amazon as a tracked lab.
 - **[2026-08-03]** — Thin 3-day cycle (2026-07-31 to 2026-08-03) but one high-signal story: OpenAI demoed a new "Astra" model class to Congress (multi-agent, long-horizon, claimed unsolved-math results, will go through gov't pre-release review — unverified). Also: Amazon guts its Nova lineup to bet on one frontier model under Pieter Abbeel (leans harder on Anthropic stake meanwhile); DeepSeek's V4-Flash-0731 gets a large agent-benchmark leap from post-training alone, no architecture change; MiniMax open-weights H3, a unified text/image/video/audio model with native stereo sound (2K, 15s clips) — open-weight's first serious push into closed-lab-grade video generation; federal EO 14409 frontier-model review framework missed its Aug 1 deadline with nothing public, while California's SB 942 provenance law went operative Aug 2 — state rules are binding before federal ones. Gemini 3.5 Pro remains unshipped, now the longest flagship slip of the year. No landmark research paper this cycle. Added OpenAI Astra note to Lab Strategy Watch; no who's-ahead leader changes (Astra unverified).
 - **[2026-07-11]** — Initial creation. Established model landscape, capability frontiers, who's-ahead table, lab strategy watch, and trend tracker baseline (first reading, no prior columns) based on the 2026-06-27 to 2026-07-11 news cycle. Filed four opening predictions.
