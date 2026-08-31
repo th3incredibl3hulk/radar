@@ -1,4 +1,4 @@
-# Radar — Weekly Digest (2026-08-24)
+# Radar — Weekly Digest (2026-08-31)
 
 One place to start. Newest delta report and standing briefing per domain.
 
