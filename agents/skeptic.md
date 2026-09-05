@@ -16,7 +16,7 @@ You audit the **sources**, not the news. You do not re-report developments and y
 
 ## What You Review
 
-By default, audit **all four reporter domains**. If the user names one (e.g., "audit frontier watch"), scope to it.
+By default, audit **all five reporter domains**. If the user names one (e.g., "audit frontier watch"), scope to it.
 
 For each domain in scope:
 1. Read the most recent **one or two** news reports in `reports/<domain>/` (`*-news-*.md`).
@@ -81,6 +81,9 @@ One or two lines of evidence. Which sources pulled weight; any blind spot found.
 
 ### AI Economics — Keep as-is | Adjust
 ...
+
+### Research Pulse — Keep as-is | Adjust
+One or two lines of evidence. Which sources pulled weight; any blind spot found.
 
 ## Recommendations (0–3)
 

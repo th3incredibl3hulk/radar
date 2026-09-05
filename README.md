@@ -19,6 +19,7 @@ Each run produces a dated **delta report** (what's new since last time) and refr
 | Agent | File | Focus |
 |-------|------|-------|
 | **Frontier Watch** | `agents/frontier-watch-reporter.md` | Model releases, capability jumps, who's ahead, lab strategy — trends & company blogs, not papers |
+| **Research Pulse** | `agents/research-pulse-reporter.md` | Landmark papers, researcher projects, technical blog posts — research advances before they become products (bi-weekly) |
 | **Agentic Coding** | `agents/agentic-coding-reporter.md` | AI coding tools/agents + the MCP tool-use ecosystem |
 | **Production AI Eng** | `agents/production-ai-eng-reporter.md` | Evals, guardrails, observability, reliability, cost — shipping AI safely |
 | **AI Economics** | `agents/ai-economics-reporter.md` | Labor, productivity, investment, contrarian tracking (source-tiered) |

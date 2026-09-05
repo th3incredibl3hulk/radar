@@ -9,6 +9,27 @@ MODEL="${RADAR_MODEL:-sonnet}"
 BUDGET="${RADAR_BUDGET_USD:-2.00}"
 TODAY="$(date +%Y-%m-%d)"
 
+# Preflight: don't burn a scheduled run against a dead network (e.g. mid-travel).
+# Retry for a few minutes since connectivity often comes back quickly (wifi handshake, landed plane, etc).
+NETWORK_CHECK_ATTEMPTS=10
+NETWORK_CHECK_DELAY=30
+network_up() {
+  curl -fsS --max-time 5 https://api.anthropic.com > /dev/null 2>&1
+}
+attempt=1
+until network_up; do
+  if [ "${attempt}" -ge "${NETWORK_CHECK_ATTEMPTS}" ]; then
+    echo "!! No network after ${NETWORK_CHECK_ATTEMPTS} attempts (${TODAY}) — skipping this run entirely, no commit."
+    exit 1
+  fi
+  echo "==> Network unreachable, retrying (${attempt}/${NETWORK_CHECK_ATTEMPTS})..."
+  attempt=$((attempt + 1))
+  sleep "${NETWORK_CHECK_DELAY}"
+done
+
+SUCCESS_COUNT=0
+FAIL_COUNT=0
+
 AGENTS=(
   frontier-watch-reporter
   agentic-coding-reporter
@@ -16,18 +37,34 @@ AGENTS=(
   ai-economics-reporter
 )
 
+# Research pulse runs bi-weekly (every other week)
+WEEK_NUM=$(date +%V)  # ISO week number
+if [ $((WEEK_NUM % 2)) -eq 0 ]; then
+  AGENTS+=(research-pulse-reporter)
+fi
+
 cd "${REPO}"
 
 for agent in "${AGENTS[@]}"; do
   echo "==> ${agent} (${TODAY})"
-  "${CLAUDE}" --agent "${agent}" \
+  if "${CLAUDE}" --agent "${agent}" \
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
     --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" "Agent(article-summarizer)" \
     --print \
-    -p "Generate today's report. Today is ${TODAY}." \
-    || echo "!! ${agent} failed — continuing"
+    -p "Generate today's report. Today is ${TODAY}."
+  then
+    SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+  else
+    FAIL_COUNT=$((FAIL_COUNT + 1))
+    echo "!! ${agent} failed — continuing"
+  fi
 done
+
+if [ "${SUCCESS_COUNT}" -eq 0 ]; then
+  echo "!! All ${FAIL_COUNT} agent(s) failed (${TODAY}) — skipping digest regeneration and commit."
+  exit 1
+fi
 
 # Regenerate the weekly digest: an index linking the newest report + state-of-the-art per domain.
 DIGEST="${REPO}/reports/weekly-digest.md"
@@ -36,7 +73,7 @@ DIGEST="${REPO}/reports/weekly-digest.md"
   echo
   echo "One place to start. Newest delta report and standing briefing per domain."
   echo
-  for dir in frontier-watch agentic-coding production-ai-eng ai-economics; do
+  for dir in frontier-watch agentic-coding production-ai-eng ai-economics research-pulse; do
     name="$(echo "${dir}" | tr '-' ' ')"
     latest="$(ls -1 "${REPO}/reports/${dir}"/*-news-*.md 2>/dev/null | sort | tail -n1 || true)"
     sota="${REPO}/reports/${dir}/${dir}-state-of-the-art.md"
@@ -60,10 +97,22 @@ git add reports/
 if git diff --cached --quiet; then
   echo "==> No report changes to commit"
 else
-  git commit -m "Radar: reports for ${TODAY}"
-  if git push origin HEAD; then
-    echo "==> Pushed to GitHub"
+  if [ "${FAIL_COUNT}" -gt 0 ]; then
+    git commit -m "Radar: reports for ${TODAY} (${SUCCESS_COUNT} ok, ${FAIL_COUNT} failed)"
   else
-    echo "!! git push failed — changes committed locally only, push manually"
+    git commit -m "Radar: reports for ${TODAY}"
   fi
+
+  PUSH_ATTEMPTS=5
+  PUSH_DELAY=30
+  attempt=1
+  until git push origin HEAD; do
+    if [ "${attempt}" -ge "${PUSH_ATTEMPTS}" ]; then
+      echo "!! git push failed after ${PUSH_ATTEMPTS} attempts — changes committed locally only, push manually"
+      break
+    fi
+    echo "==> git push failed, retrying (${attempt}/${PUSH_ATTEMPTS})..."
+    attempt=$((attempt + 1))
+    sleep "${PUSH_DELAY}"
+  done
 fi
