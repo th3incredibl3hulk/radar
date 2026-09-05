@@ -14,7 +14,9 @@ TODAY="$(date +%Y-%m-%d)"
 NETWORK_CHECK_ATTEMPTS=10
 NETWORK_CHECK_DELAY=30
 network_up() {
-  curl -fsS --max-time 5 https://api.anthropic.com > /dev/null 2>&1
+  # Note: no -f — api.anthropic.com's bare root path 404s even when reachable.
+  # We only care that the TCP/TLS/HTTP round-trip completed at all.
+  curl -sS --max-time 5 https://api.anthropic.com -o /dev/null 2>&1
 }
 attempt=1
 until network_up; do
