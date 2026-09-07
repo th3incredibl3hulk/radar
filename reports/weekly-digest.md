@@ -1,17 +1,17 @@
-# Radar — Weekly Digest (2026-09-05)
+# Radar — Weekly Digest (2026-09-07)
 
 One place to start. Newest delta report and standing briefing per domain.
 
 ## frontier watch
-- Latest report: [frontier-watch-news-2026-09-05.md](frontier-watch/frontier-watch-news-2026-09-05.md)
+- Latest report: [frontier-watch-news-2026-09-07.md](frontier-watch/frontier-watch-news-2026-09-07.md)
 - State of the art: [frontier-watch-state-of-the-art.md](frontier-watch/frontier-watch-state-of-the-art.md)
 
 ## agentic coding
-- Latest report: [agentic-coding-news-2026-09-05.md](agentic-coding/agentic-coding-news-2026-09-05.md)
+- Latest report: [agentic-coding-news-2026-09-07.md](agentic-coding/agentic-coding-news-2026-09-07.md)
 - State of the art: [agentic-coding-state-of-the-art.md](agentic-coding/agentic-coding-state-of-the-art.md)
 
 ## production ai eng
-- Latest report: [production-ai-eng-news-2026-09-05.md](production-ai-eng/production-ai-eng-news-2026-09-05.md)
+- Latest report: [production-ai-eng-news-2026-09-07.md](production-ai-eng/production-ai-eng-news-2026-09-07.md)
 - State of the art: [production-ai-eng-state-of-the-art.md](production-ai-eng/production-ai-eng-state-of-the-art.md)
 
 ## ai economics
