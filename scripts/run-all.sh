@@ -9,6 +9,13 @@ MODEL="${RADAR_MODEL:-sonnet}"
 BUDGET="${RADAR_BUDGET_USD:-2.00}"
 TODAY="$(date +%Y-%m-%d)"
 
+# In --print mode the agent delegates the report to a background task, and print
+# mode kills anything still running when this ceiling expires. The 600s default
+# silently decapitated frontier-watch on 2026-09-14 (a full run takes ~13min).
+# Deliberately a large bound rather than 0/unlimited, so a genuinely hung agent
+# can't stall the whole weekly run forever.
+export CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS="${RADAR_BG_WAIT_CEILING_MS:-1800000}"
+
 # Preflight: don't burn a scheduled run against a dead network (e.g. mid-travel).
 # Retry for a few minutes since connectivity often comes back quickly (wifi handshake, landed plane, etc).
 NETWORK_CHECK_ATTEMPTS=10
@@ -49,17 +56,27 @@ cd "${REPO}"
 
 for agent in "${AGENTS[@]}"; do
   echo "==> ${agent} (${TODAY})"
-  if "${CLAUDE}" --agent "${agent}" \
+
+  # frontier-watch-reporter -> reports/frontier-watch/frontier-watch-news-<date>.md
+  domain="${agent%-reporter}"
+  expected="${REPO}/reports/${domain}/${domain}-news-${TODAY}.md"
+
+  if ! "${CLAUDE}" --agent "${agent}" \
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
     --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" "Agent(article-summarizer)" \
     --print \
     -p "Generate today's report. Today is ${TODAY}."
   then
-    SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
-  else
     FAIL_COUNT=$((FAIL_COUNT + 1))
-    echo "!! ${agent} failed — continuing"
+    echo "!! ${agent} exited nonzero — continuing"
+  elif [ ! -f "${expected}" ]; then
+    # Exit 0 is not proof of work: a background-wait kill leaves the status clean
+    # but writes nothing, which is how 2026-09-14 got committed with a hole in it.
+    FAIL_COUNT=$((FAIL_COUNT + 1))
+    echo "!! ${agent} exited clean but wrote no ${domain}-news-${TODAY}.md — counting as failed"
+  else
+    SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
   fi
 done
 
@@ -95,7 +112,10 @@ DIGEST="${REPO}/reports/weekly-digest.md"
 echo "==> Digest written to ${DIGEST}"
 
 # Push this run's reports to GitHub so they're readable/retained there.
-git add reports/
+# Agent memory goes too: it's each reporter's dedup log, so losing it means the
+# next cycle re-reports old news. Previously only reports/ was staged, leaving
+# every agent's memory local-only and one `git clean` from gone.
+git add reports/ .claude/agent-memory/
 if git diff --cached --quiet; then
   echo "==> No report changes to commit"
 else
