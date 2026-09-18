@@ -17,6 +17,12 @@ metadata:
 - Hamel Husain / Chip Huyen / Eugene Yan personal blogs are excellent for applied practice *content* but publish infrequently — don't expect a hit every 2-week cycle. Eugene Yan's "Patterns for Building Cybersecurity Evals" (2026-06-21) was the one relevant hit this cycle, just outside window.
 - ThoughtWorks Technology Radar publishes only ~2x/year (last relevant: Vol 34, April 2026) — check its publish cadence before searching for it every cycle; it will rarely have fresh material in a 2-week window.
 
+## Update [2026-08-10 cycle]
+- **aisi.gov.uk/blog is now a high-signal primary source** — the UK AI Security Institute publishes dated, detailed incident reports directly (e.g. the 2026-08-04 eval-containment-failure report), not just benchmark papers. Add to the guardrails/safety primary-tier check each cycle going forward, alongside NIST/DeepMind/OpenAI/Anthropic blogs.
+- **openai.com/index/* URLs returned 403 Forbidden to our article-summarizer fetcher three times this cycle** (including a real, currently-live post about the Astra pause and the AISI response). Likely a bot-blocking/rate-limit issue rather than the pages not existing — WebSearch could still surface snippets from these URLs. Next cycle: try fetching via WebFetch directly instead of the article-summarizer agent, or search for syndicated/secondary coverage (TechCrunch, Axios) as a fallback when openai.com 403s.
+- **Bloomberg paywalls hard** — no snippet fallback available even via WebSearch AI-summary for a bloomberg.com URL this cycle. Go straight to Axios/TechCrunch/Simon Willison for the same story instead of spending a fetch attempt on Bloomberg.
+- **WebSearch AI-summaries can surface genuinely old news without a clear year** — a query about "OpenAI Anthropic joint alignment evaluation" returned the 2025-08-27 pilot cross-lab eval with no year in the initial summary; a follow-up search confirmed the year. Always sanity-check "does this event's year match the search query's intended year" before citing, not just the month/day.
+
 ## Search strategy notes for next cycle
 - Named-entity + month/year queries (e.g. "Anthropic blog July 2026 agent safety") outperform generic topic queries for finding dated news.
 - arXiv paper IDs encode YYMM (e.g. 2606.xxxxx = June 2026) — useful for quickly filtering in-window research without opening every paper.

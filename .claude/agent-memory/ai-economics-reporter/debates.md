@@ -1,23 +1,18 @@
 ---
 name: debates
-description: Current state of the Great Debate threads (magnitude, displacement timeline, distribution of gains) as of 2026-07-11 — check for shifts each cycle
+description: Current state of the Great Debate threads as of 2026-09-05 — check for shifts each cycle
 metadata:
   type: project
 ---
 
-## Debate: Magnitude of productivity impact
-- **State as of 2026-07-11:** leans skeptic at macro level (BLS TFP decelerated 1.5%→0.8% in 2025; Goldman's own March 2026 research found "no meaningful economy-wide AI-productivity relationship"), but firm/task-level RCTs (Brynjolfsson et al., Noy & Zhang) keep showing large real gains (15-40%) in specific deployments. Unresolved aggregation puzzle: task-level RCT gains aren't showing up in nonfarm TFP. Acemoglu remains the most bearish credible economist (~0.7% cumulative TFP/decade); Goldman/Brynjolfsson-adjacent commentary is the optimist pole (1-2%/yr).
-- **Watch for:** any Q2/Q3 2026 BLS productivity release that reverses the TFP deceleration — would be the first hard data point for the optimist camp.
+## Magnitude of productivity impact
+Leans skeptic/measured at macro (BLS TFP deceleration, Goldman's 2% S&P 500 quantification). No direct movement this cycle (2026-09-05); Q3 BLS productivity not due until ~November.
 
-## Debate: Job displacement timeline
-- **State as of 2026-07-11:** leans slow/gradual. Even Goldman, which raised its numeric displacement estimate (6-7%→9%, ~15M workers/10yr), explicitly rejected "apocalypse" framing in favor of gradual reallocation with a "small net drag." Acemoglu's timeline is also multi-decade. No credible Tier 1/2 source is currently in the "fast, 2-3 year" camp.
-- **Watch for:** Aschenbrenner or similar "fast take-off" voices publishing displacement-specific (not just capability) forecasts — would be worth tracking as the fast-camp counterweight.
+## Job displacement timeline
+Leans slow/gradual. 2026-09-05 update: Challenger's August reversal (AI dropped from 1st to 4th most-cited layoff reason after 5 months atop the list, but still 2026's #1 cumulative reason at ~22% of YTD cuts) plus August's BLS jobs beat (+162K) carrying a legible AI-infrastructure subsector contraction (-8K, computing infrastructure within a 23K Information-sector decline) both fit "slow, noisy, sector-specific" — not evidence of either acceleration or resolution.
 
-## Debate: Distribution of gains
-- **State as of 2026-07-11:** concentrating at the capital/firm level (NBER: AI adoption skews to already-productive/younger firms; VC funding: 2 labs = 43% of global funding, 5 fund managers = 73% of Q1 fundraising; McKinsey: scaled value capture concentrated in few functions) vs. distributing at the individual-task level (Noy & Zhang RCT: AI compresses within-firm skill gaps). These aren't contradictory — different units of analysis (firm/capital vs. task/individual). Keep these separated in future write-ups; don't let "AI narrows individual skill gaps" get conflated with "AI democratizes economic gains" since capital concentration data says otherwise.
+## Distribution of gains
+Concentrating at capital/firm/senior-worker level; distributing only within-task (Noy & Zhang). Geography/institutions axis (added 2026-08-24) unchanged this cycle — no new geographic data found.
 
-## Contrarian trajectory notes
-- "AI productivity overstated" — **gaining evidence** this cycle (first hard macro data point: BLS TFP deceleration).
-- "Fast severe displacement" — **losing evidence** this cycle (Goldman's own report undercuts the framing despite raising the number).
-- "Distribution matters more than magnitude" — **gaining evidence** (McKinsey scaling gap, NBER firm adoption skew).
-- "AI value capture concentrating in labs vs. enterprises" — **new/emerging thread** this cycle (Karp's complaint + Fed's debt-funded-capex concern + widening capex/revenue gap). Track whether this becomes a recurring theme or fades as a one-off Palantir marketing moment.
+## Systemic/bubble-risk chorus (cross-cutting, not a formal debate axis yet)
+Still 4 central banks (Fed, BoE, IMF, ECB) — no 5th joined this cycle. New 2026-09-05 divergence: BofA's August Global Fund Manager Survey shows sentiment cooling sharply (AI-bubble tail-risk citations 45%→32% MoM, 71% don't expect hyperscaler capex cuts, cash at near-record lows) even as the structural risk case (BIS's GPU-collateral/private-credit mispricing critique, 4-central-bank warnings) is entirely unaddressed by the sentiment shift. This is now explicitly a "sentiment vs. institutions" divergence worth tracking as its own thread — watch whether sentiment keeps cooling (supports "overhyped bubble-fear" read) or whether it's a dead-cat bounce ahead of the next correction.

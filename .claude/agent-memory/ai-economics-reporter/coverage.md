@@ -6,28 +6,33 @@ metadata:
 ---
 
 ## Last report
-- **2026-07-11** — inaugural report, covered 2026-06-27 to 2026-07-11 (no prior report existed, so 2-week default window was used).
+- **2026-09-14** — covered 2026-09-05 to 2026-09-14. New: BIS Sept Quarterly Review (tech debt $1T+/44% of private credit, AI-specific $40B, opaque/circular); NBER w35684 Babina/He/Jiang "organizational capital" +1pp/yr productivity 2018-2024; Anthropic "Economic Scenarios for Transformative AI" (Korinek/Jones/Sacher/Cotter/McCrory, 3 scenarios +1.6/+8.3/+32.4% GDP by 2030, reviewed-not-endorsed by Acemoglu/Autor/Romer); PitchBook Q3 AI VC (deals -27% to 107, value +39% to $6.1B, corporate 87.9% share); Oracle 2nd layoff round (20-30K TD Cowen est.) funding AI capex gap vs. Uber's non-AI-attributed 3,300 cut. CORRECTED GAP: Stanford "Canaries in the Coal Mine" Aug 2026 update (Brynjolfsson/Chandar/Chen, pub. 2026-08-12, missed 2 prior cycles) — youth (22-25) AI-exposed employment gap 19%, up from 15%. Lesson: check Stanford Digital Economy Lab explicitly each cycle going forward, it was a structural blind spot.
+- **2026-09-05** — covered 2026-08-24 to 2026-09-05.
+- **2026-08-24** — covered 2026-08-17 to 2026-08-24 (Goldman cross-country labor study, ECB correction warning, IMF Tenreyro inflationary-transition note, OpenAI-Nvidia Ohio repricing, China displacement reporting, equity valuation extremes).
+- **2026-08-17** — covered 2026-08-10 to 2026-08-17 (Goldman Q2 earnings scorecard 2% quantify, NBER task-chaining w34859, Challenger July report, Apollo/Blackstone $35B SPV, AI crowding-out $50B/$600B).
 
-## Stories/papers covered (do not re-cover as "new" unless there's a material update)
-- Acemoglu's TFP estimate (~0.07pp/yr, 0.7% cumulative/decade, ~5% tasks automatable) — MIT Tech Review interview 2026-05-11, Fortune 2026-06-21
-- Goldman Sachs "An AI Job Apocalypse?" report (2026-06-25) — displacement raised 6-7%→9%/15M workers, rejects apocalypse framing
-- Goldman's earlier (~March 2026) finding of "no meaningful economy-wide AI-productivity relationship" but 30% boost in 2 specific use cases
-- Fed Financial Stability Report Spring 2026 — 50% of market contacts cite AI as systemic risk (up from 30% Fall 2025, 9% a year prior); debt-funded AI capex concern
-- Chicago Fed note on bank AI-adjacent credit exposure (9%→13% of C&I commitments, 2015→late 2025)
-- IMF April 2026 GFSR — AI valuation concentration flagged as material downside risk
-- Hyperscaler 2026 capex guidance: $725B combined (+77% YoY); Amazon $200B, Google $175-185B, Microsoft $110-120B
-- BLS Q1 2026 productivity release — nonfarm productivity +0.3% q/q, +2.9% y/y; TFP decelerated 1.5%→0.8% in 2025
-- McKinsey State of AI Trust 2026 / State of Organizations 2026 — 88% adoption in ≥1 function, 72% AI workload in production, only 23% scaling agentic AI, 39% report EBIT impact
-- PitchBook/NVCA H1 2026 VC data — $412.7B US venture, 86% ($355.9B) to AI; OpenAI $122B + Anthropic $95.6B = 43% global funding; Anthropic $65B in Q2 alone; 5 managers = 73.1% of Q1 fundraising
-- St. Louis Fed / NY Fed research on youth unemployment — weak hiring (not AI) as primary driver (1.1pp of 2.9pp increase attributable to AI shift vs. job-opening scarcity)
-- Atlanta Fed reviving Arrow (1962) "learning by doing" theory — proposed automation-profit tax + entry-level task subsidies
-- Anthropic Economic Futures Program expansion — $200M research fund + $150M fellowship (announced 2026-06-10)
-- Palantir CEO Alex Karp CNBC remarks (2026-07-01) — token pricing "oversold," stock +8%; Nvidia open-weight partnership
-- NBER Working Paper 34836 (Barrero, Yotzov et al.) "Firm Data on AI" — 69% firms use AI, skewed to younger/productive firms, execs avg 1.5hrs/week usage
-- AI bubble debate: David Woo (H2 2026 burst prediction, 2026-07-04) vs. Ed Yardeni (no bubble, 2026-07-06); CEPR "AI Bubble Monitor" launched
+## New this cycle (2026-09-05) — do not re-cover as new
+- BLS first official occupational AI-exposure classification (released 2026-08-27 alongside 2025-2035 Employment Projections): 4-tier ranking, 200+ occupations in top tier, built from 3 theoretical exposure scores + 2 observed-usage measures (Anthropic Claude + Microsoft Copilot task-mapping). BLS caveat: does not distinguish automation from augmentation, not a displacement/wage forecast. This is a new, more rigorous measurement instrument — cite as such, distinct from Goldman/PwC/academic exposure indices.
+- August 2026 BLS Employment Situation (released ~2026-09-04): nonfarm payrolls +162,000 (vs. 53,000 consensus), unemployment 4.1% steady, June/July revised up combined 55,000. Information sector -23,000 within it, driven by computing infrastructure providers/data processing/web hosting (-8,000), publishing (-7,000), broadcasting (-5,000).
+- Nvidia Q2 FY2027 earnings (quarter ended 2026-07-26, reported 2026-08-26): revenue $96.2B (+106% YoY, +18% QoQ), Data Center revenue $89.0B (+117% YoY), gross margin 75.0%, non-GAAP EPS $2.22, Q3 guidance $108.0B (±2%). Figures confirmed via Nvidia's own press release (GlobeNewswire/nvidianews) — CNBC 403'd for article-summarizer, other secondary aggregators (Kiplinger, tech-insider.org, intellectia.ai) gave conflicting/wrong figures ($81.6B, etc.) — always verify against nvidianews.nvidia.com or investor.nvidia.com press release for Nvidia earnings.
+- BofA Global Fund Manager Survey, August 2026 (published ~2026-08-18/19, surfaced this cycle): AI-bubble tail-risk citation fell to 32% from July's 45%; 71% don't expect hyperscaler capex cuts in 2026 (up from 61%); 58% don't expect AI labor disruption before 2028; "long global semiconductors" crowded trade reading fell to 53% from record 82%; cash at 3.5% of AUM (6th-lowest since 1998). NOTE: this survey's publication date (~08-18/19) sits just before this cycle's official window start (08-24) — included because it wasn't captured in the 08-24 report and is directly relevant to the systemic-risk chorus thread; flag this boundary case for future date-window judgment calls.
+- Challenger August 2026 report (published 2026-09, PDF path /2026/09/): 52,881 total cuts (+58% MoM, lowest August since 2022); YTD 529,914 (-41% YoY). AI fell to 4th-most-cited reason (3,462 cuts, lowest since Dec 2025), ending a 5-month run atop the list (Mar-Jul). AI still leads 2026 YTD cumulative tally: 116,175 cuts, ~22% of all announcements.
 
-## Not yet found — gaps to fill next cycle
-- AI job postings data (Indeed Hiring Lab tracks this — search directly next time)
-- Median AI startup valuation data (PitchBook — need a more targeted query)
-- Geographic distribution outside US (EU/OECD, China labor-market data) — search terms underrepresented this cycle
-- Wage effects / skills premium literature — thin this cycle, needs a dedicated search pass
+## Stories/papers covered (do not re-cover as "new" unless material update)
+- Goldman "AI Job Apocalypse?" (2026-06-25) and "16,000 jobs/month" (April 2026) and cross-country labor study (2026-08-19) — three DISTINCT Goldman releases, cite correctly.
+- Goldman Q2 2026 earnings scorecard (2026-08-16/17); Goldman AI crowding-out estimate (2026-08-12); Goldman global AI investment ~$1.02T revision (2026-08-02/03)
+- SemiAnalysis labs-vs-hyperscalers value capture (2026-08-04); Bank of England FSR July 2026 (2026-08-05)
+- Chicago Booth Review on AI debt / Apollo-Blackstone $35B SPV / hyperscaler bond coverage 5x→<2x (2026-08-14)
+- Challenger July 2026 report (2026-08-07); NBER w34859 task-chaining theory (surfaced 2026-08-17)
+- BLS Q2 2026 productivity (+1.4% q/q, +2.2% y/y, released 2026-08-06). Q3 productivity not due until ~November 2026 — don't search for it before then.
+- Acemoglu/Kong/Ozdaglar "knowledge collapse" NBER w34910 (2026-08-03); Korinek & McKelvey "Measuring the AI Economy" (2026-08-03); OECD Employment Outlook 2026 (2026-08-03)
+- PitchBook Q1 2026 valuation premiums (2026-08-03); Fed Beige Book July 2026 (2026-08-03)
+- Autor & Kausik "Resolving the Automation Paradox: Falling Labor Share, Rising Wages" (SSRN, published 2025-12-30, MIT PDF dated 2026-03) — already in SOTA doc's Wage Effects section; resurfaces in searches but is NOT new, don't re-report.
+- PwC 2026 Global AI Jobs Barometer — GAP RESOLVED: primary source confirmed (pwc.com press release, released 2026-06-15), 62% AI-skills wage premium (up from 57% prior year, as high as 118% in consumer markets, 16% in government) figures are accurate as previously cited in SOTA doc. No longer a sourcing gap.
+- ECB correction warning, IMF Tenreyro note, OpenAI-Nvidia Ohio repricing, China displacement reporting, equity valuation extremes — all covered 2026-08-24, see that cycle's entries.
+- Kevin Warsh Fed AI task force (Andreessen, Charles Jones, Asha Sharma): still no output as of 2026-09-05; mandate is to report findings to FOMC by end of 2026. Check again closer to year-end, not every cycle.
+
+## Not yet found / low-confidence — gaps to fill next cycle
+- Named-economist searches (Autor, Restrepo, Syverson, Rock, Brynjolfsson) again surfaced mostly already-covered or older work. One new item found but not yet substantively covered: Brynjolfsson's "AI's Use of Knowledge in Society" (University of Chicago Press, September 2026) — a book, check for reviews/summaries next cycle. Also Anthropic Economic Index paper "Labor market impacts of AI: A new measure and early evidence" (Massenkoff & McCrory, dated March 2026, found via search but predates our tracking window) — finding: ~3x gap between AI's feasible vs. actual task performance, young-worker (22-25) hiring into AI-exposed occupations down ~14% since ChatGPT launch. Not reported as "new" this cycle since it's from March, but not yet incorporated into SOTA doc — consider adding as background context next cycle if space allows.
+- Semiconductor sector selloff (~2026-07-28/29, Samsung/SK Hynix -15%+, SOX -6%, Nvidia -$153B single session) predates this cycle's window and was seemingly not covered in the 08-24 report either — likely a genuine miss. Don't re-report as new, but it's useful context for the BofA August FMS entry (the survey followed this selloff).
+- BLS AI-exposure classification's underlying data files (the actual occupation-by-tier list) not yet pulled — could support a deeper Occupational Exposure section update next cycle.

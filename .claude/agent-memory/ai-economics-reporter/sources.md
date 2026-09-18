@@ -1,19 +1,16 @@
 ---
 name: sources
-description: Which sources delivered strong signal vs. underperformed in the 2026-07-11 report cycle — use to tune search queries next time
+description: Source performance notes — updated 2026-09-05
 metadata:
   type: reference
 ---
 
-## Delivered well this cycle (worth repeating targeted searches on)
-- Goldman Sachs Research (goldmansachs.com/insights) — direct PDF reports findable via search, high signal, both bull and skeptic content depending on report
-- Federal Reserve system (St. Louis Fed, Chicago Fed, NY Fed via Fortune coverage) — genuinely new empirical/policy angles on youth unemployment and financial stability, underused in generic "AI economics" searches; search Fed regional bank blogs directly by name (St. Louis Fed "On the Economy", Chicago Fed Insights) rather than generic terms
-- NBER — direct paper search (nber.org/papers) surfaces working papers fast; the "SI 2026 Digital Economics and AI" conference page is a good pointer to upcoming/recent output
-- PitchBook/NVCA Venture Monitor — best source for VC concentration data; search "PitchBook NVCA Venture Monitor" + quarter for the cleanest numbers
-- McKinsey (State of AI Trust, State of Organizations annual surveys) — reliable adoption-vs-scaling data, but note: their surveys are self-reported and orientation is pro-AI-adoption consulting business, so treat magnitude claims (not just direction) with mild skepticism
+## Delivered well this cycle
+- Direct WebSearch for primary press releases (e.g. `"NVIDIA" second quarter fiscal 2027 financial results press release`) resolved conflicting secondary-aggregator figures reliably — go straight to the company's own newsroom/investor-relations naming convention when aggregators disagree, rather than trying more aggregator queries.
+- BLS-specific searches ("BLS database occupations AI exposure 2026 release", "BLS jobs report August 2026") surfaced genuinely primary, dated releases directly — BLS remains the most reliable Tier-1 channel in this report's source list.
+- Challenger's own site (wp-content/uploads/YYYY/MM/ URL pattern) is a reliable way to spot-check whether a "Challenger Report" search hit is the current month's primary PDF or a recycled older one — check the URL path date, not just the article date.
 
 ## Underperformed / need better queries next cycle
-- Indeed Hiring Lab — mentioned in search snippets but never directly queried for AI job-postings data; query it directly next time ("Indeed Hiring Lab AI job postings 2026")
-- Median AI startup valuation — generic PitchBook/CB Insights queries surfaced funding volume but not valuation medians; try "PitchBook AI startup valuation multiple 2026" or CB Insights unicorn tracker directly
-- Geographic (non-US) coverage — OECD, ECB, China-specific data barely surfaced; searches were US-centric by default (BLS/Fed/Goldman dominate US framing). Add explicit "OECD AI economic impact 2026" and "China AI labor market" queries next cycle
-- Autor/Restrepo/Korinek/Syverson/Rock — none of these named economists produced a distinct new finding this cycle beyond Acemoglu; either they were quiet, or search terms didn't surface them. Try named-author + "2026" NBER/SSRN search directly next cycle rather than topic-only searches
+- article-summarizer hit 403 on CNBC this cycle (in addition to prior 403s on Dataconomy, Washington Post, Bloomberg) — CNBC earnings-live-blog pages appear to be bot-blocked. For earnings data, go directly to the company's newsroom/IR press release via WebSearch rather than dispatching article-summarizer to CNBC.
+- Named-economist searches (Autor, Restrepo, Syverson, Rock, Brynjolfsson + "2026") continue to surface mostly already-covered or older work — confirmed structurally quiet channel across 3+ cycles now. Recommend checking monthly rather than every cycle going forward to conserve budget.
+- BofA Global Fund Manager Survey results are scattered across many secondary aggregators (Seeking Alpha, Investing.com, Trustnet, Fortune) reporting different months' data under similar headlines — always check the article's stated survey period (e.g., "conducted July 2-9") against the publish date before citing, since old FMS results get recycled in later coverage.

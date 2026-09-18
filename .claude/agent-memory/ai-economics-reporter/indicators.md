@@ -1,21 +1,14 @@
 ---
 name: indicators
-description: Latest Economic Indicators Tracker readings (as of 2026-07-11) — use to compute deltas/direction for the next cycle's tracker update
+description: Latest Economic Indicators Tracker readings (as of 2026-09-05) — use for next cycle's deltas
 metadata:
   type: project
 ---
 
-Readings as of report date **2026-07-11** (first cycle — no prior baseline to diff against):
-
-| Indicator | Value | Source |
-|---|---|---|
-| Global AI VC funding (Q) | ~$205B US Q2 2026; $355.9B AI share of $412.7B US venture H1 2026 (86%) | PitchBook/NVCA |
-| Hyperscaler AI capex (annual guidance) | $725B combined 2026 (+77% YoY) — AMZN $200B, GOOGL $175-185B, MSFT $110-120B | Company guidance / Goldman |
-| Enterprise AI adoption % | 72% have AI workload in production; 88% use AI in ≥1 function | McKinsey State of AI Trust 2026 |
-| AI job postings | Not found this cycle — check Indeed Hiring Lab directly next time | — |
-| AI layoff/hiring-drag mentions | ~10-15K jobs/month shaved off growth in most-exposed sectors (tech, consulting, graphic design) | Goldman Sachs Research |
-| BLS productivity (nonfarm) | +0.3% q/q, +2.9% y/y (Q1 2026); TFP decelerated 1.5%→0.8% across 2025 | BLS |
-| AI startup valuations (median) | Not found this cycle; OpenAI raised $122B, Anthropic $95.6B cumulative in funding | PitchBook |
-| Fed AI systemic-risk sentiment | 50% of market contacts cite AI as risk (up from 30% Fall 2025, 9% a year prior) | Fed Financial Stability Report Spring 2026 |
-
-Next cycle: shift these into the "1mo ago" column (assuming ~monthly cadence) and add fresh "Now" readings. Compute direction arrows from the delta.
+Full table lives in state-of-the-art doc (columns 08-10/08-17/08-24/09-05). Key 09-05 readings:
+- Nonfarm payrolls (NEW indicator): +162K August (vs. 53K consensus), unemployment 4.1% steady; Information sector -23K (computing infrastructure -8K) — BLS Employment Situation
+- Occupational AI exposure (NEW instrument): BLS's first official 4-tier classification (200+ occupations top tier), theoretical + observed-usage (Claude/Copilot) blend — released 2026-08-27
+- Hyperscaler/AI capex: Nvidia Q2 FY27 $96.2B revenue (+106% YoY), Data Center $89.0B (+117% YoY), Q3 guidance $108.0B; secondary reports (unverified) put 2027 top-5 hyperscaler capex ~$1.3T vs ~$800B 2026
+- AI-cited layoffs: Challenger August — AI fell to 4th-most-cited reason (3,462, ending 5-mo #1 streak) but still YTD #1 cumulative (116,175, ~22% of all cuts)
+- Central-bank systemic-risk chorus: still 4 banks, no 5th this cycle; BUT BofA FMS shows fund-manager AI-bubble tail-risk concern falling 45%→32% MoM — sentiment vs. institutional-risk divergence, new thread to track
+- Unchanged this cycle (no fresher data found): global AI VC funding, enterprise adoption %, BLS productivity (still Q2, Q3 due ~Nov), AI startup valuations median, S&P 500 AI earnings quantification (still Goldman's 2%), US equity valuation extremes (still Shiller CAPE >41 etc.)

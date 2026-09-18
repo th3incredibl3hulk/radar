@@ -46,6 +46,29 @@ metadata:
 **Noise / low priority:**
 - Same generic SEO/listicle blogs as last cycle (digitalapplied.com, byteiota.com, explainx.ai, etc.) continue to show up heavily and rehash the same facts with no new reporting — keep treating as secondary-confirmation-only, never as the cited primary source.
 
+## From 2026-08-03 cycle
+- **huggingface.co/blog** — published original forensic security research (agent-intrusion-technical-timeline) this cycle; treat as primary source for HF-side security incidents, same tier as flatt.tech/noma.security.
+- **anthropic.com/news** — primary source for the July 30 three-incidents disclosure; Anthropic is now doing unprompted security self-disclosure as a content type, worth checking each cycle alongside model-launch posts.
+- HN direct search (`site:news.ycombinator.com <topic> 2026`) worked well as a filter-tier check this cycle — found the MCP spec discussion thread directly. Still haven't done a true Lobste.rs/Reddit direct-fetch pass; WebSearch-mediated results for Reddit were low-signal/generic (returned newsletter aggregator content, not actual subreddit threads) — try fetching reddit.com/r/ChatGPTCoding directly next cycle instead of searching for it.
+- Budget-constrained cycle: skipped direct checks of x.ai/news, cognition.com/blog, and openai.com/index beyond pricing — relied on WebSearch secondary aggregation for Cognition/Codex items. Revisit with primary-source fetches next cycle if budget allows.
+
+## From 2026-08-17 cycle
+- Budget-constrained cycle (~$2 total budget): relied entirely on WebSearch aggregation this time, did NOT dispatch article-summarizer sub-agents or direct WebFetch to primary sources (blog.modelcontextprotocol.io, code.claude.com/docs, github.blog/changelog were all reached only via WebSearch summaries, not direct fetch). Quality held up fine (WebSearch's built-in summarization is decent for changelog-style content) but worth reverting to direct-fetch + article-summarizer dispatch next cycle if budget allows — that pattern was validated as higher-signal in the 2026-08-03/08-10 notes below.
+- techcrunch.com and stocktitan.net (SEC 8-K filings) were the highest-value single sources this cycle for the SpaceX/Cursor close — filing-level detail (share counts, exact date) beat every secondary aggregator.
+- Watch for date-laundering in WebSearch results: several hits for "critical MCP vulnerability" (e.g., Ruflo/RufRoot CVE-2026-59726) surfaced in searches but were actually published in July, not this window — always check the URL's date slug or ask the search tool to confirm publish date before filing as fresh.
+
+## From 2026-08-24 cycle
+- Budget-constrained cycle (~$2 total budget): relied on WebSearch aggregation exclusively again, no article-summarizer dispatch or direct WebFetch. Quality held up — WebSearch surfaced good primary-source URLs (cursor.com/blog, github.blog, blog.modelcontextprotocol.io, cloud.google.com/blog) even without fetching them directly.
+- thehackerwire.com and digitalapplied.com were the best sources for the Context7 CVE-2026-75130 detail — more technical depth than thehackernews.com aggregation this time.
+- Cross-check caveat confirmed useful again: a WebSearch summary claimed "Grok 4.6" release from a 9to5mac article title alone; corroborated independently via GitHub's own changelog search before filing — don't file a model-version claim from a single search snippet without a second independent hit.
+- gradually.ai and releasebot.io continue to be decent single-fetch changelog aggregators for Claude Code/Codex version numbers — useful as a fast first pass before/instead of direct code.claude.com fetch under tight budget.
+
+## From 2026-09-05 cycle
+- manifold.security/blog — primary source for GitSpawn, high technical detail (exact exploitation timing per agent); prefer over thehackernews aggregation when available.
+- openai.com/index and deploymentsafety.openai.com — primary sources for GPT-6 Astra system-card/safety detail; the safety-overview and system-card pages had more substance than press coverage.
+- frontierharness.org + its GitHub org (frontier-harness-eval/eval) — new primary source for cross-harness benchmarking, worth checking each cycle now that it exists.
+- WebSearch continues to surface stale/wrong snapshots occasionally (code.claude.com/docs/en/whats-new search summary claimed "Opus 4.7 latest," actually a months-old cached page) — direct WebFetch on the canonical URL caught and corrected this. Keep preferring direct WebFetch over WebSearch summaries for any page with a persistent "latest state" URL.
+
 ## Gaps to try next cycle (updated)
 - code.claude.com/docs/en/whats-new fetched cleanly this cycle via WebFetch — keep doing this directly rather than searching for Claude Code news.
 - Still haven't done a direct Lobste.rs/Reddit pass — the HN-front-page angle worked well this cycle (found the Bun/Zig story and the SWE-Bench Pro thread) but Reddit/Lobsters remain unchecked.

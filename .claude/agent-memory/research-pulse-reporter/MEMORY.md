@@ -1,0 +1,2 @@
+- [Last report state](last_report_state.md) — 2026-09-14 report date, window covered (09-05 to 09-14), items covered (dedup list), explicit exclusions.
+- [Source notes](source_notes.md) — which sources/search strategies work well (Anthropic direct, HF trending papers, arXiv title search) vs. poorly (BAIR via search, generic arXiv queries) across two cycles; date-confusion gotchas.
