@@ -3,7 +3,7 @@
 One place to start. Newest delta report and standing briefing per domain.
 
 ## frontier watch
-- Latest report: [frontier-watch-news-2026-09-07.md](frontier-watch/frontier-watch-news-2026-09-07.md)
+- Latest report: [frontier-watch-news-2026-09-17.md](frontier-watch/frontier-watch-news-2026-09-17.md)
 - State of the art: [frontier-watch-state-of-the-art.md](frontier-watch/frontier-watch-state-of-the-art.md)
 
 ## agentic coding
