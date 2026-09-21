@@ -1,9 +1,13 @@
 ---
 name: debates
-description: Current state of the Great Debate threads as of 2026-09-05 — check for shifts each cycle
+description: Current state of the Great Debate threads as of 2026-09-21 — check for shifts each cycle
 metadata:
   type: project
 ---
+
+## Update 2026-09-21
+Distribution of gains: concentration now documented at national/firm/individual-worker AND local-geographic scale. Two NBER Fall 2026 conference papers add substance: Brynjolfsson & Hitzig give the concentration trend its clearest theoretical mechanism yet (AI erodes decentralized decision-making's informational advantage — Hayek 1945 reversed); Alvarez/Argente/Chow/Van Patten's causally-identified data-center paper shows the same dynamic at the county level (local jobs/wages/tax revenue up, but redistribution within the county from renters/ratepayers to property owners). Magnitude and displacement-timeline debates: no movement this cycle (BLS Q3 productivity and Challenger Sept both off-cycle). Systemic/bubble-risk chorus: still 5 institutions (Fed/BoE/IMF/ECB/BIS), no 6th joined; compute-market tightening (Nebius +20% price hike) and capex-to-CFO ratio (93%, up from 33% in 2023) are new granular data points feeding the same unresolved structural-risk thread, not a resolution either way.
+
 
 ## Magnitude of productivity impact
 Leans skeptic/measured at macro (BLS TFP deceleration, Goldman's 2% S&P 500 quantification). No direct movement this cycle (2026-09-05); Q3 BLS productivity not due until ~November.

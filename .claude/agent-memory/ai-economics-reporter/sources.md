@@ -1,9 +1,16 @@
 ---
 name: sources
-description: Source performance notes — updated 2026-09-05
+description: Source performance notes — updated 2026-09-21
 metadata:
   type: reference
 ---
+
+## Update 2026-09-21
+- NBER conference pages (e.g. "Economics of Artificial Intelligence, Fall 2026") are a good discovery channel for papers being actively discussed/discussed-live, not just new working-paper numbers — surfaces discussant reception (e.g. Avi Goldfarb on Brynjolfsson-Hitzig) that a plain NBER working-paper search misses. Worth checking each cycle during conference season (spring/fall).
+- NBER PDF working papers reliably fail WebFetch/article-summarizer (binary/compressed stream, not text-extractable) — go straight to a second WebSearch for the abstract/findings (search the working-paper number + "abstract findings") rather than dispatching article-summarizer to the PDF URL; the NBER HTML paper landing page (nber.org/papers/wXXXXX) sometimes also fails to fetch, but a targeted WebSearch on the paper number reliably surfaces abstract-level content from secondary discussion (SSRN, Altiorem, X/econ-twitter) even when the primary PDF doesn't render.
+- Census Bureau BTOS (census.gov/library/stories or /newsroom/press-releases) is a valuable Tier-1 addition to the source list going forward — it's the only randomly-sampled (not executive-survey) national AI-adoption instrument tracked. Check for updated releases each cycle now that it's in the baseline.
+- Watch for year-confusion in WebSearch results on recirculating quotes (e.g. Powell's "fairly highly valued" was Sept 2025, kept surfacing in "September 2026" queries) — always check the article's actual dateline, not just query-year matching.
+- FactSet Insight (insight.factset.com) is a decent Tier 2/3 source for hyperscaler capex-to-cash-flow aggregation across companies — better than chasing each hyperscaler's individual guidance number separately.
 
 ## Delivered well this cycle
 - Direct WebSearch for primary press releases (e.g. `"NVIDIA" second quarter fiscal 2027 financial results press release`) resolved conflicting secondary-aggregator figures reliably — go straight to the company's own newsroom/investor-relations naming convention when aggregators disagree, rather than trying more aggregator queries.

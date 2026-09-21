@@ -23,6 +23,12 @@ metadata:
 - **Bloomberg paywalls hard** — no snippet fallback available even via WebSearch AI-summary for a bloomberg.com URL this cycle. Go straight to Axios/TechCrunch/Simon Willison for the same story instead of spending a fetch attempt on Bloomberg.
 - **WebSearch AI-summaries can surface genuinely old news without a clear year** — a query about "OpenAI Anthropic joint alignment evaluation" returned the 2025-08-27 pilot cross-lab eval with no year in the initial summary; a follow-up search confirmed the year. Always sanity-check "does this event's year match the search query's intended year" before citing, not just the month/day.
 
+## Update [2026-09-21 cycle]
+- **openai.com/index/* worked fine this cycle** via WebSearch snippet (model-misalignment-reporting-framework page) — the multi-cycle 403 pattern isn't universal; still try direct WebFetch/article-summarizer first, fall back to secondary (MarkTechPost, Axios, implicator.ai) only if it fails.
+- **CNBC and Axios both 403'd the article-summarizer this cycle** (cnbc.com, axios.com) — NBC News and implicator.ai worked for the same stories. When CNBC/Axios 403s, try nbcnews.com, marktechpost.com, or implicator.ai as fallbacks before giving up.
+- **Two separate WebSearch-surfaced articles turned out to be stale/out-of-window with no obvious year in the summary**: CSIS's "Out of Bounds" piece (actually 2026-08-24, not this cycle) and a CSA note on NIST SP 800-53 AI-agent overlays (actually 2026-03-30, six months stale). Both required a direct article-summarizer fetch to catch. Keep verifying any date-sensitive policy/analysis piece directly before citing — this is now a recurring failure mode of WebSearch's AI-summary layer, not a one-off.
+- **inferencex.semianalysis.com and newsletter.semianalysis.com don't surface individual dated posts well via WebFetch** — both returned only homepage/nav/testimonial content, not article bodies. Need a direct post URL (e.g. from a WebSearch result linking straight to a newsletter.semianalysis.com/p/... slug) rather than fetching the index page.
+
 ## Search strategy notes for next cycle
 - Named-entity + month/year queries (e.g. "Anthropic blog July 2026 agent safety") outperform generic topic queries for finding dated news.
 - arXiv paper IDs encode YYMM (e.g. 2606.xxxxx = June 2026) — useful for quickly filtering in-window research without opening every paper.

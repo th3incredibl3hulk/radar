@@ -5,7 +5,17 @@ metadata:
   type: reference
 ---
 
-Snapshot as of 2026-09-07. Verify current state before quoting in future reports — names and versions have been shifting fast.
+Snapshot as of 2026-09-21. Verify current state before quoting in future reports — names and versions have been shifting fast.
+
+## 2026-09-21 update
+- **Cognition**: $1B/$47-48B round CLOSED (was open/negotiating for 4 cycles) — $2B Series E, $48B valuation, led by a16z + Accel. Company-wide ARR ~$900M.
+- **Claude Code**: v2.1.277 (Sept 18) adds AGENTS.md fallback support. Projects redesign beta (Sept 17): coordinator + parallel cloud threads. Patched Plugin4Shell (v2.1.179).
+- **Codex**: patched Plugin4Shell (v0.146.0). GPT-5.5 retiring from ChatGPT/ChatGPT Work/Codex Oct 14, 2026.
+- **GitHub Copilot**: Plugin4Shell still UNPATCHED as of this snapshot. New auto model-tier selection (efficiency/balance/intelligence), Sept 18.
+- **Gemini CLI**: Plugin4Shell will NOT be patched — Google is retiring the product instead.
+- **Anthropic**: $100B annualized revenue run-rate; targeting November 2026 IPO at ~$2T valuation (largest ever if it holds, ahead of SpaceX's June IPO). New "Anthropic Institute" research arm launched; "R&D Automation Index" says Claude leads 26% of internal AI R&D (Aug 2026 reading, up from <1% Feb 2026).
+- **Google**: shipped "AX" (github.com/google/ax), open-source (Apache 2.0) multi-agent orchestrator, Sept 21.
+- **OpenAI**: DevDay scheduled Sept 29, 2026 (San Francisco, Fort Mason) — "Managed Agents" expected as headline coding-agent feature. Outside this window, confirm details next cycle.
 
 ## 2026-09-07 update (short 2-day cycle)
 - **GPT-6 Astra**: ARC-AGI-3 score is harness-dependent — 99.9% (OpenAI's "Provider Adapter" harness) vs. 62.7% (shared "Standard" harness). Cite the harness when quoting either number.
