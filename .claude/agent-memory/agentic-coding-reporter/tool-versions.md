@@ -5,7 +5,16 @@ metadata:
   type: reference
 ---
 
-Snapshot as of 2026-09-21. Verify current state before quoting in future reports — names and versions have been shifting fast.
+Snapshot as of 2026-09-28. Verify current state before quoting in future reports — names and versions have been shifting fast.
+
+## 2026-09-28 update
+- **Anthropic**: **Claude Opus 5.5** launched 2026-09-22 — Fable-5.1-level performance, 40% cheaper, 30%+ faster, 1M-token context/128K max output. New default Opus model in Claude Code.
+- **OpenAI**: **GPT-6 Sol and GPT-6 Luna** launched 2026-09-22 — half the price of GPT-5.6-era Sol/Luna (Sol $2/$10 per M, Luna $0.10/$0.50 per M). OpenAI's Agents API in public beta since Sept 10 (cloud-managed coordinator/sub-agent architecture).
+- **Claude Code**: v2.1.283 (Sept 25) — team-level model-version pinning/blocking. v2.1.278 — auto mode server-side by default, no extra charge.
+- **GitHub Copilot**: local agent sandboxing (public preview) + OpenTelemetry monitoring, Sept 25. New models live: Opus 5.5, GPT-6 Sol, GPT-6 Luna, Grok 4.7.
+- **Cursor**: Projects (launched Sept 10, local coordinator architecture) now explicitly contrasted with OpenAI's cloud-managed Agents API — "coordinator, cloud vs. local" is the live architecture debate. OpenAI's Nov 12, 2026 cutoff of Cursor's model access (announced Aug 29) still pending, not yet in effect.
+- **Cognition**: SWE-2 model — research preview in Devin's agent selector (Sept 21).
+- **OpenAI DevDay**: Sept 29, 2026 (Fort Mason, SF) — one day outside this window; persistent always-on "o" agent teased pre-event. Confirm details next cycle.
 
 ## 2026-09-21 update
 - **Cognition**: $1B/$47-48B round CLOSED (was open/negotiating for 4 cycles) — $2B Series E, $48B valuation, led by a16z + Accel. Company-wide ARR ~$900M.

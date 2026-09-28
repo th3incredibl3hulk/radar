@@ -29,6 +29,10 @@ metadata:
 - **Two separate WebSearch-surfaced articles turned out to be stale/out-of-window with no obvious year in the summary**: CSIS's "Out of Bounds" piece (actually 2026-08-24, not this cycle) and a CSA note on NIST SP 800-53 AI-agent overlays (actually 2026-03-30, six months stale). Both required a direct article-summarizer fetch to catch. Keep verifying any date-sensitive policy/analysis piece directly before citing — this is now a recurring failure mode of WebSearch's AI-summary layer, not a one-off.
 - **inferencex.semianalysis.com and newsletter.semianalysis.com don't surface individual dated posts well via WebFetch** — both returned only homepage/nav/testimonial content, not article bodies. Need a direct post URL (e.g. from a WebSearch result linking straight to a newsletter.semianalysis.com/p/... slug) rather than fetching the index page.
 
+## Update [2026-09-28 cycle]
+- **alignment.openai.com (distinct subdomain from openai.com/index) fetched fine via article-summarizer** for OpenAI's misalignment incident reports — try this subdomain directly when openai.com/index 403s.
+- **axios.com 403'd article-summarizer again** (3rd+ time) — go straight to secondary wire coverage (Tom's Hardware, Yahoo Tech, Korean wires asiae.co.kr/news.sbs.co.kr) for Axios scoops; Tom's Hardware itself also failed to render article body on fetch (JS-rendered), only WebSearch AI-summary worked for it — for paywalled/JS-heavy sites, trust the WebSearch summary over a failed fetch rather than giving up.
+
 ## Search strategy notes for next cycle
 - Named-entity + month/year queries (e.g. "Anthropic blog July 2026 agent safety") outperform generic topic queries for finding dated news.
 - arXiv paper IDs encode YYMM (e.g. 2606.xxxxx = June 2026) — useful for quickly filtering in-window research without opening every paper.

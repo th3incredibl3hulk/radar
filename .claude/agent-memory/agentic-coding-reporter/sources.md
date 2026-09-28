@@ -69,6 +69,12 @@ metadata:
 - frontierharness.org + its GitHub org (frontier-harness-eval/eval) — new primary source for cross-harness benchmarking, worth checking each cycle now that it exists.
 - WebSearch continues to surface stale/wrong snapshots occasionally (code.claude.com/docs/en/whats-new search summary claimed "Opus 4.7 latest," actually a months-old cached page) — direct WebFetch on the canonical URL caught and corrected this. Keep preferring direct WebFetch over WebSearch summaries for any page with a persistent "latest state" URL.
 
+## From 2026-09-28 cycle
+- Budget-constrained cycle (~$2 total budget): relied entirely on WebSearch aggregation, no article-summarizer dispatch or direct WebFetch — consistent with the 08-17/08-24 pattern; quality held up, WebSearch surfaced good primary-source URLs (anthropic.com, openai.com/index, thenewstack.io, github.blog/changelog, docs.devin.ai) without needing to fetch them.
+- thenewstack.io was the single best source this cycle for the OpenAI/Cursor coordinator-architecture story — more analytical depth than any aggregator, worth checking directly for cross-vendor strategy stories going forward.
+- Confirmed the "check the date slug, don't trust a search snippet" lesson again: several "MCP security September 2026" hits actually traced to a September **2025** npm incident (postmark-mcp) or undated evergreen roundup posts. Skipped rather than filed — correct call, but costs a round of searching each cycle. Consider adding `after:2026-09-21` style date qualifiers to MCP-security searches specifically, since that beat seems to attract the most stale-dating noise.
+- Jules/Gemini-in-Jules searches kept surfacing Nov 2025 and March 2026 changelog entries under generic queries — same stale-dating issue, different sub-topic. Google's own jules.google/docs/changelog is dated and reliable once found; prefer fetching it directly next cycle over a generic WebSearch query.
+
 ## Gaps to try next cycle (updated)
 - code.claude.com/docs/en/whats-new fetched cleanly this cycle via WebFetch — keep doing this directly rather than searching for Claude Code news.
 - Still haven't done a direct Lobste.rs/Reddit pass — the HN-front-page angle worked well this cycle (found the Bun/Zig story and the SWE-Bench Pro thread) but Reddit/Lobsters remain unchecked.

@@ -1,0 +1,1 @@
+- [Audit history](audit_history.md) — 2026-09-26 audit: 3 recs pending (dead RP entries, Quanta add, hold AC voices); watch smol.ai gap
