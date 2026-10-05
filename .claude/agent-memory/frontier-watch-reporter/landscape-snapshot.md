@@ -5,6 +5,8 @@ metadata:
   type: project
 ---
 
+Delta 2026-10-05: Agentic leader = OpenAI on productization (dots, Agents API computer use, Bedrock Managed Agents), Anthropic on demonstrated autonomy. Coding: Sonnet 5.5 (vendor-reported Opus-class at $2/$10) + GPT-6.1 Sol (~1/5 Astra price). AA top: GPT Sol 58.9, Opus 5.5 57.6, Sonnet 5.5 56.0, Terra 55.0 (tracker figures). Open-weight/Google/Mistral/xAI: no confirmed ships.
+
 Snapshot as of 2026-09-28 (see coverage-log.md for what moved this cycle):
 
 - General reasoning: GPT-6/5.6 Sol now #1 on AA Intelligence Index v4.3.2 (58.9%), Claude Opus 5.5 close #2 (57.6%), GPT-6 Terra #3 (55.0%) — displaced the prior Fable 5.1/Astra tie (53). NOTE: model-naming discrepancy unresolved (some trackers say "GPT-5.6 Sol" for the leader vs. OpenAI's own "GPT-6 Sol" launch) — verify against artificialanalysis.ai directly if precision matters.

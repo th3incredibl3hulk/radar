@@ -52,3 +52,9 @@ metadata:
 - Fullstack Code Arena adoption/usage data (check occasionally, no fixed cadence expected)
 - LangSmith changelog cadence — went quiet 07-04 to 07-13 (9 days with no entries after multiple-per-week pace in June); confirm whether this is a real slowdown or a documentation lag next cycle
 - Braintrust product changelog — rolling small updates (GLM-5.2 built-in model, tag-filter/span-error UI changes) without a single dated flagship post; consider checking their changelog page directly (not search) next cycle for a consolidated item
+
+
+## 2026-10-05 cycle (window 09-28 to 10-05) — LATEST REPORT
+- Covered: arXiv 2609.30266 agent trace tampering; OpenAI DNS escape follow-up details (implicator.ai, secondary only); Microsoft Storm-3168 agentic ransomware (09-25); AgentXploit arXiv 2609.31318; Microsoft Defender agent discovery (09-24); NVIDIA SkillSpector/Cisco skill-scanner.
+- Not verified: smol.ai page was stale (Sept snapshot) — its Agent Arena / 'Harness Card' items unverified; Cisco-Galileo acquisition claim (search summary, 2026-04-09) unverified; BlackFog ADX Vision 2.0 press-release only.
+- Next cycle: fetch vendor changelog pages directly (LangSmith, Braintrust, Arize); check OpenAI training-pause resumption; DeepMind fund (4th cycle overdue); try Hamel/Simon Willison/Eugene Yan blogs directly (not covered this cycle).

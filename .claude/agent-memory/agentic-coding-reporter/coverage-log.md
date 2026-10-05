@@ -6,7 +6,14 @@ metadata:
 ---
 
 ## Last report
+- **2026-10-05** — `reports/agentic-coding/agentic-coding-news-2026-10-05.md` — covered 2026-09-29 to 2026-10-05. 8 entries + checked section.
 - **2026-09-28** — `reports/agentic-coding/agentic-coding-news-2026-09-28.md` — covered 2026-09-21 to 2026-09-28 (full 7-day cycle). 5 entries + checked section.
+
+## Stories filed as of 2026-10-05 (do not re-report unless material update)
+- OpenAI DevDay Sept 29: Codex Cloud, Codex Security Cloud, Agents API computer use, GPT-6.1 Sol ($2/$10), Ultrafast (6x price), Pro $500 tier, Decisions API, Dots, MCP Events support (spec still unfiled SEP, WG led by Anthropic+AWS).
+- Claude Code Mods v2.1.287 (Oct 1, on by default, unsandboxed), v2.1.289 (Oct 3) mod-vs-managed-deny fix. Sonnet 5.5 (Sept 28, $2/$10). Copilot VS Code v1.136-1.140, code-review API, GPT-6.1 Sol + Sonnet 5.5 GA in Copilot.
+- Harness CVEs (DeepSeek CVE-2026-82533, Mistral Vibe, OpenCode 1.18.22); Terminal-Bench 4.0 aggregator: Codex+Astra 58.2 vs Claude Code+Fable 5.1 57.9.
+- Still pending: Cursor cutoff Nov 12; Anthropic Nov IPO target; Claude Code docs primary not fetched for Mods (secondary only) - verify next cycle.
 
 ## Stories filed as of 2026-09-28 (do not re-report unless material update)
 - **Claude Opus 5.5 (Anthropic) and GPT-6 Sol/Luna (OpenAI) both launched 2026-09-22** — direct same-day competitive collision. Opus 5.5: Fable-5.1-level performance, 40% cheaper, 30%+ faster, 1M-token context/128K max output, best-yet score on Anthropic's own misalignment behavioral audit (~2,000 scenarios); Terminal-Bench 4.0 (xhigh) 66.4% vs. GPT-6 Astra 57.9%, Fable 5.1 55.8%, Opus 5 52.3%, GPT-5.6 Sol 37.3%; #1 on BenchLM's SWE-bench Pro read at 89.9% (vendor-aggregator snapshot, not swebench.com canonical). GPT-6 Sol/Luna: half the price of 5.6-era equivalents (Sol $2/$10 per M, down from $4/$20; Luna $0.10/$0.50, down from $0.20/$1.20), Sol claims ~half the mistake rate of predecessor, near-Astra reliability. Both live in GitHub Copilot by Sept 25 alongside Grok 4.7.

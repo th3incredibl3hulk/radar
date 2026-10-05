@@ -54,3 +54,6 @@ Threads opened/updated in the 2026-07-20 report:
 23. **[Opened 2026-09-21] Convergent cross-vendor vulnerability classes are recurring roughly every 6-7 weeks, each in a different trust boundary.** GitSpawn (Sept 1-2, git-config) → Plugin4Shell (Sept 17-18, plugin-marketplace SHA-pin bypass). Same shape both times: independently-built agents (Claude Code, Codex, + 2-5 others) share an unsafe default, patch unevenly, no shared/protocol-level fix emerges. Watch for: a third instance, and whether any vendor or the MCP/Agent-Plugins maintainers propose a shared hardening layer instead of continuing to patch per-agent.
 
 10. **Fable 5's promotion-extension pattern resolved cleanly, not messily.** After two extensions, Anthropic landed on a segmented policy (permanent-for-premium, metered-for-standard) rather than a third punt — suggesting the delays were genuine capacity/competitive management, not indecision. Worth watching whether this segmented-tier pattern (premium seats get frontier models bundled, standard seats pay metered) becomes the standard playbook other vendors copy when introducing a new top-tier model.
+
+## 2026-10-05
+- Extension/plugin layer as attack surface (Mods, Plugin4Shell, GitSpawn). Cloud-resident always-on agents (Codex Cloud, Dots, Copilot automations). MCP Events draft vs. client adoption.

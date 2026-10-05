@@ -7,6 +7,12 @@ metadata:
 
 Snapshot as of 2026-09-28. Verify current state before quoting in future reports — names and versions have been shifting fast.
 
+## 2026-10-05 update
+- **Claude Code**: v2.1.287 (Oct 1, Mods), v2.1.289 (Oct 3). **Sonnet 5.5** Sept 28 ($2/$10, 1M ctx).
+- **OpenAI**: GPT-6.1 Sol ($2/$10) Sept 29; Ultrafast tier 6x price; Codex Cloud; Pro $500 tier.
+- **Copilot**: VS Code v1.136-1.140; GPT-6.1 Sol + Sonnet 5.5 GA.
+- **OpenCode** fixed in 1.18.22.
+
 ## 2026-09-28 update
 - **Anthropic**: **Claude Opus 5.5** launched 2026-09-22 — Fable-5.1-level performance, 40% cheaper, 30%+ faster, 1M-token context/128K max output. New default Opus model in Claude Code.
 - **OpenAI**: **GPT-6 Sol and GPT-6 Luna** launched 2026-09-22 — half the price of GPT-5.6-era Sol/Luna (Sol $2/$10 per M, Luna $0.10/$0.50 per M). OpenAI's Agents API in public beta since Sept 10 (cloud-managed coordinator/sub-agent architecture).

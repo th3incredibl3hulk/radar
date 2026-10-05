@@ -79,3 +79,6 @@ metadata:
 - code.claude.com/docs/en/whats-new fetched cleanly this cycle via WebFetch — keep doing this directly rather than searching for Claude Code news.
 - Still haven't done a direct Lobste.rs/Reddit pass — the HN-front-page angle worked well this cycle (found the Bun/Zig story and the SWE-Bench Pro thread) but Reddit/Lobsters remain unchecked.
 - Consider checking x.ai/news and cognition.com/blog directly next cycle for SpaceXAI/Grok and Devin primary-source updates instead of relying on secondary aggregation — this cycle relied on secondary sources for both and found nothing new in-window, but a direct primary-source check would be more reliable than trusting "nothing new" from search results alone.
+
+## 2026-10-05
+- Good: InfoQ/The Decoder (DevDay), GitHub changelog, WorkOS (MCP Events), Adversa roundup (secondary). Weak: Kingy/aggregators for Mods - fetch code.claude.com docs directly next time.

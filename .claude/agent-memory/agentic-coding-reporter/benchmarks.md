@@ -47,3 +47,6 @@ No new benchmark leaderboard movement found this cycle (budget-constrained run, 
 - codingfleet.com/blog (Terminal-Bench, SWE-bench Pro secondary aggregation — useful but verify against primary sources)
 - morphllm.com/swe-bench-pro (secondary aggregator, single-source risk)
 - openai.com/index (primary source for the SWE-Bench Pro credibility audit — check OpenAI's own blog for benchmark-methodology posts going forward, they've now done this twice in 2026)
+
+## 2026-10-05
+- Terminal-Bench 4.0 (Morph aggregator, likely pre-Opus 5.5): Codex+GPT-6 Astra 58.2%, Claude Code+Fable 5.1 57.9% (2x cost). Anthropic-reported Opus 5.5 66.4% (xhigh) - provenance differs.

@@ -7,7 +7,9 @@ metadata:
 
 Source of truth is reports/frontier-watch/frontier-watch-state-of-the-art.md "Predictions & Bets" section — check there first, this file mirrors key state.
 
-Resolved this cycle (2026-09-28):
+Update 2026-10-05: DevDay prediction RESOLVED CORRECT (dots shipped Sept 29). NEW: dots-style agents show higher failure/cost-overrun than vendor claims (med, 3mo); at least one of Qwen 4/DeepSeek V4.1 Pro/GLM-5.4-5.5/Kimi K3.x ships by 2026-12-05 (med, 2mo). IPO predictions: now firmer (Oct 14 investor day), "slips again beyond Nov" still open. Full list in state-of-the-art doc.
+
+Resolved earlier (2026-09-28):
 - [2026-09-17, RESOLVED INCORRECT] "Neither Grok 4.7 nor Grok 4.8 ships in recognizable form within 3mo." Grok 4.7 shipped on the API just 4 days after filing (Sept 21), full spec published. Lesson: don't extrapolate a growing backlog into "nothing ships" — xAI's pipeline is unreliable in timing, not necessarily in eventually shipping.
 
 Open as of 2026-09-28:
