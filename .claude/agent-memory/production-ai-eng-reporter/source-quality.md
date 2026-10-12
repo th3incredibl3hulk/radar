@@ -45,3 +45,6 @@ metadata:
 - **docs.langchain.com/langsmith/changelog fetch results can be inconsistent between a direct WebFetch and a WebSearch AI-summary of the same page** — WebFetch of the actual page said no entries existed in a given date range while a WebSearch summary for the same query listed several. Trust the direct WebFetch of the primary page over a WebSearch AI-summary when they conflict.
 - **Good in-window hits this cycle, worth rechecking early next time:** parlance-labs.com/blog (Hamel), openai.com/index (launch/incident posts), forbes.com/councils/forbestechcouncil (op-ed surfacing vendor research), dtex.ai/resources (i³ threat advisories — a security vendor worth adding to the guardrails/HITL beat alongside CSA).
 - **Confirmed low-signal again:** generic "AI agent guardrails/observability July 2026" WebSearch queries still return almost entirely SEO "20XX guide" content (atlan.com, montecarlo.ai, braintrust.dev/articles/* comparison pages, aimultiple.com) — continue to skip and go straight to named-source queries.
+
+## Update [2026-10-12]
+- WebFetch on simonwillison.net home, aisi.gov.uk/blog, hamel.dev, docs.langchain.com/langsmith/changelog returned dated, usable lists - fetch these directly first; generic WebSearch is SEO noise. news.smol.ai index still stale (~09-10).

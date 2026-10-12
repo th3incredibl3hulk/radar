@@ -26,6 +26,13 @@ metadata:
 - **Follow-on verification of a claimed proof/result is itself legitimate in-window news**, even if the original announcement predates the window — e.g. "mathematicians still checking the Navier-Stokes proof" (dated within window) is a valid hook to cover the underlying Sept 8 story now. Don't treat the original announcement date as disqualifying if the story is still actively developing.
 - **Simultaneous independent convergence (two labs, same week, same milestone) is a stronger signal than either result alone** — worth explicitly searching for whether a competing lab hit the same benchmark/result around the same time (worked well for the Yang-Mills amplitude story: Anthropic's Claude and Song He's CAS group with GPT-6 both hit nine loops the same week).
 
+## 2026-10-12 cycle notes
+
+- Generic "<lab> research October 2026" searches returned mostly nothing in-window. What worked: follow-up searches on known stories (Navier-Stokes, ART) and a topical search ("Hinton Pachocki Clark paper") that surfaced the cross-lab paper from a stray snippet. Stray snippets in unrelated results are discovery leads — chase them.
+- Searching "OpenAI math papers Erdős" found the Oct 6 release; specific-topic searches beat lab-name searches.
+- "Interconnects" query collides with hardware interconnects; use "Nathan Lambert newsletter" instead.
+- Cost: ~17 standard WebSearch calls ≈ $0.45. No article-summarizer used (primary sites not fetched) — next cycle, fetch OpenAI repo/Bloom blog for primary verification.
+
 ## Gotchas
 
 - OpenAI's openai.com/index/ pages still 403 the article-summarizer's fetch tool (unconfirmed this cycle, not retested, but assume still true). Rely on WebSearch snippets, or third-party technical coverage (e.g. Simon Willison's blog reliably summarizes OpenAI research posts in detail and is fetchable).

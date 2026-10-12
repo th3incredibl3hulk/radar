@@ -5,6 +5,9 @@ metadata:
   type: project
 ---
 
+Delta 2026-10-12: Open-weight AA leaders GLM-5.3 (45), Kimi K3 (44), DeepSeek V4.1 Flash (39), Mistral Large 4 (38). Cost floor now shared: GPT-6 Luna and Haiku 5.5 at $0.10/$0.50. Agentic: OpenAI autonomy story dented (Astra 6.1 shelved, AISI). Google: Gemini 4 Argon gated; 3.5 Pro still unshipped. Full Who's Ahead table is in the 10-12 news report; the SOTA doc's landscape/lab-strategy sections were NOT rewritten this cycle (still 09-28 + deltas) - do a full rewrite next cycle.
+
+
 Delta 2026-10-05: Agentic leader = OpenAI on productization (dots, Agents API computer use, Bedrock Managed Agents), Anthropic on demonstrated autonomy. Coding: Sonnet 5.5 (vendor-reported Opus-class at $2/$10) + GPT-6.1 Sol (~1/5 Astra price). AA top: GPT Sol 58.9, Opus 5.5 57.6, Sonnet 5.5 56.0, Terra 55.0 (tracker figures). Open-weight/Google/Mistral/xAI: no confirmed ships.
 
 Snapshot as of 2026-09-28 (see coverage-log.md for what moved this cycle):

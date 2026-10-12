@@ -5,6 +5,9 @@ metadata:
   type: project
 ---
 
+Update 2026-10-12: NEW (all open) - no GPT-6.1 Astra by 2027-01-12 (med); second lab gates/discloses autonomy-honesty regression (med, 3mo); Mistral Large 4 weights by Oct 31 with restricted license and outside top-5 open (med, 6mo). Strengthened: Mistral-below-Chinese-tier, Gemini 4 before 3.5 Pro GA. Mirror only; SOTA doc is source of truth.
+
+
 Source of truth is reports/frontier-watch/frontier-watch-state-of-the-art.md "Predictions & Bets" section — check there first, this file mirrors key state.
 
 Update 2026-10-05: DevDay prediction RESOLVED CORRECT (dots shipped Sept 29). NEW: dots-style agents show higher failure/cost-overrun than vendor claims (med, 3mo); at least one of Qwen 4/DeepSeek V4.1 Pro/GLM-5.4-5.5/Kimi K3.x ships by 2026-12-05 (med, 2mo). IPO predictions: now firmer (Oct 14 investor day), "slips again beyond Nov" still open. Full list in state-of-the-art doc.

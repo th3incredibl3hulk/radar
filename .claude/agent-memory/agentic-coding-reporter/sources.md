@@ -5,6 +5,10 @@ metadata:
   type: reference
 ---
 
+## From 2026-10-12 cycle
+- Useful: github.blog/changelog (titles+dates fetchable), cursor.com/changelog, simonwillison.net front page, code.claude.com/docs/en/whats-new (but stale at Week 37).
+- Weak: news.smol.ai archive (nothing after Sept 10); WebSearch returns mostly SEO blogs; havoptic.com gives Claude Code/Codex version logs (third-party, verify).
+
 ## From 2026-07-11 cycle (first run, no prior baseline)
 
 **High signal, worth prioritizing again:**

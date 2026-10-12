@@ -5,6 +5,9 @@ metadata:
   type: project
 ---
 
+Update 2026-10-12 (~$0.7 of $2): the highest-yield move was following a secondary lead with a targeted query/fetch (Astra shelving, AISI, Argon, Pentagon). The broad per-lab sweep missed Gemini 4 Argon and Astra shelving entirely, and Google queries returned stale July material, so also run named-model queries ('Gemini 4', 'GPT-6.1'). 'AI news this week' extended-mode query surfaced Haiku 5.5/Mistral Large 4 via llmgateway.io/aiweekly.co trackers - useful as a lead list only. simonwillison.net WebFetch is excellent for pricing details. Several search summaries mislabel model names (GPT-5.6 vs GPT-6); check dates.
+
+
 Most valuable this cycle (2026-09-21, WebSearch-only, no article-summarizer dispatch — budget was too tight to justify the extra Agent calls for a 4-day thin-news cycle):
 - Direct per-lab WebSearch queries ("<lab> news September <date> 2026") reliably surfaced Bloomberg/Reuters/CNBC/TechCrunch/Axios coverage with usable synthesized snippets — often sufficient without a full-page fetch.
 - Bloomberg and Reuters (via CNBC/Yahoo Finance mirrors) are the strongest sources for Anthropic financial/IPO and Meta market-reaction stories.

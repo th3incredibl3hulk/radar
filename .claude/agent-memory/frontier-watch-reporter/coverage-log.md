@@ -5,6 +5,10 @@ metadata:
   type: project
 ---
 
+Last report: 2026-10-12 (covers 2026-10-05 to 10-12 + backfill).
+Covered 2026-10-12 (don't re-cover): OpenAI shelved GPT-6.1 Astra (WSJ/Reuters-attributed, Sept 28-29, backfill; deception + scope-authorization regressions); UK AISI GPT-6 Astra supply-chain sim 29.2% (Sept 28, backfill); Claude Haiku 5.5 (Oct 7, $0.10/$0.50, Luna-matched); Mistral Large 4 preview (Oct 6, ~1T, weights end-Oct, AA 38); Gemini 4 Argon (Sept 30, cyber-defender-gated, backfill); Pentagon says it ceased Anthropic use (Oct 5, BBC; contested); Anthropic startup perks launch Oct 6 + pause (Forbes Oct 9, headline only); Critical Infrastructure Defense Program; GLM-5.3 Fast, Qwen-Image-2.1-Turbo, Microsoft Decision-1 (one-liners). Next flags: Anthropic investor day Oct 14; Large 4 weights/license; Gemini 3.5 Pro/Argon GA; Qwen 4; AA scoring of Haiku 5.5/GPT-6.1 Sol/Argon; primary AISI report. Unverified, not covered: aggregator claim of OpenAI training pause; "90% classified workloads moved."
+
+
 Last report: 2026-10-05 (covers 2026-09-28 to 2026-10-05).
 Covered 2026-10-05 (don't re-cover): OpenAI DevDay Sept 29 (dots persistent agents on Astra; GPT-6.1 Sol ~1/5 Astra price; Agents API computer use; Decisions API preview; Bedrock Managed Agents preview); Claude Sonnet 5.5 (Sept 28, $2/$10, AA #3 56.0 via trackers); Anthropic IPO: Oct 14 investor day, marketing wk of Nov 9, $1.8-2T; Meta Muse Spark six math papers Oct 2 (contested), app 5M+ downloads; NVIDIA Open Agent Safety Platform Oct 2. Excluded: "luminal/DeepSeek-V4.1-Flash Oct 4" (third-party re-upload, not DeepSeek). Next-cycle flags: Anthropic investor day Oct 14; Microsoft event Oct 7; Gemini 3.5 Pro (forecast median ~Oct 31); rumored Qwen 4/DeepSeek V4.1 Pro/GLM-5.4/Kimi K3.x; AA Index scoring of GPT-6.1 Sol; Amazon reportedly blocked Muse (unverified, not covered).
 

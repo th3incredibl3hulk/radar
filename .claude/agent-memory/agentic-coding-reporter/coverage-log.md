@@ -6,6 +6,7 @@ metadata:
 ---
 
 ## Last report
+- **2026-10-12** - `reports/agentic-coding/agentic-coding-news-2026-10-12.md` - covered 2026-10-06 to 2026-10-12. 8 entries + checked. Filed: Copilot local sandboxing GA (Oct 7, MXC); Claude Haiku 5.5 (Oct 7, $0.10/$0.50, SWE-Bench Pro 64.8% vendor-reported); Claude Cowork cloud execution (Oct 5, via Willison); Cursor iOS remote control (Oct 6); Claude Code v2.1.290-294 (third-party tracker); Copilot code-review billing/secrets model; Codex CLI 0.161.0 default GPT-6.1 Sol; Willison voice/Decisions API posts. Checked no change: MCP spec, Cursor/SpaceX Nov 12 cutoff, Cognition. smol.ai archive stale (last issue Sept 10). Claude Code whats-new digest stuck at Week 37 (Sept 7-11).
 - **2026-10-05** — `reports/agentic-coding/agentic-coding-news-2026-10-05.md` — covered 2026-09-29 to 2026-10-05. 8 entries + checked section.
 - **2026-09-28** — `reports/agentic-coding/agentic-coding-news-2026-09-28.md` — covered 2026-09-21 to 2026-09-28 (full 7-day cycle). 5 entries + checked section.
 
