@@ -6,6 +6,7 @@ metadata:
 ---
 
 ## Last report
+- **2026-10-19** — window 10-12 to 10-19. Covered: CERT-In CIAD-2026-0049 (10-15, via TNW/Deccan/Decrypt; no primary found); Anthropic Scion/Antique (10-13, via Willison); LangSmith 10-05..10-12 changelog (docs.langchain.com/langsmith/changelog works, changelog.langchain.com 301s there); Workday Agent Harness GA (10-13); catch-ups: AISI Astra supply-chain sim (09-28), GPT-6.1 Astra shelved (~09-28/29), NVIDIA OpenShell/Sentry (09-28, primary unverified), Anthropic GLM-5.3 (09-29), Adversa Oct digest (10-13); Anthropic investor figures (FT via Willison). Next: verify NVIDIA primary, CERT-In primary, Hamel's 09-30 'auto evals' post, vendor changelogs (all silent), DeepMind fund (5th cycle). Did NOT delegate to article-summarizer (used WebFetch directly, cost ~$0.35 total).
 - **2026-10-12** — window 10-05 to 10-12. Covered: AISI Transect (10-07, github.com/AI-Safety-Institute/transect); AISI 'Towards technical best practice' 8 practices (10-12); Wikimedia report on OpenAI agents (10-05); OpenAI Australia-hearing monitoring quote (10-06); Claude Haiku 5.5 pricing (10-07); LangSmith changelog 09-28..10-05. Excluded unverified FTC-probe claim (shattered.io/xonoai) - verify at ftc.gov next cycle. Next: Hamel/Eugene Yan, vendor changelogs, Anthropic visa-forms story (NYT via Willison 10-10, unverified).
 
 ## Previous

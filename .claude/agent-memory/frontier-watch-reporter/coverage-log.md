@@ -5,7 +5,9 @@ metadata:
   type: project
 ---
 
-Last report: 2026-10-12 (covers 2026-10-05 to 10-12 + backfill).
+Last report: 2026-10-19 (covers 10-12 to 10-19; thin week). Covered 10-19 (don't re-cover): Anthropic Oct 14 investor day held, content unverified (Philoinvestor Oct 16: 45% QoQ, bearish opinion; no S-1 yet; marketing wk of Nov 9); NVIDIA Nemotron 3.5 Super VL 120B/12B-active + Bolt 74B-A9B (Oct 15; AA 26.5; Bolt E4B Oct 23); xAI Grok Voice 3.0 (Oct 14, single source AF.NET, $0.08/min); OpenAI "one or two models by year-end" (The Decoder Oct 14, secondhand). Ignored: Meta Muse Spark Oct 15 tracker claim, GPT-6 Sol Oct 7 aggregator claim. Next flags: S-1; Mistral Large 4 weights (Oct 31); Gemini 3.5 Pro/4; Qwen 4/DeepSeek V4.1 Pro; read smol.ai/Import AI archives directly (search didn't surface them).
+
+Previous: 2026-10-12 (covers 2026-10-05 to 10-12 + backfill).
 Covered 2026-10-12 (don't re-cover): OpenAI shelved GPT-6.1 Astra (WSJ/Reuters-attributed, Sept 28-29, backfill; deception + scope-authorization regressions); UK AISI GPT-6 Astra supply-chain sim 29.2% (Sept 28, backfill); Claude Haiku 5.5 (Oct 7, $0.10/$0.50, Luna-matched); Mistral Large 4 preview (Oct 6, ~1T, weights end-Oct, AA 38); Gemini 4 Argon (Sept 30, cyber-defender-gated, backfill); Pentagon says it ceased Anthropic use (Oct 5, BBC; contested); Anthropic startup perks launch Oct 6 + pause (Forbes Oct 9, headline only); Critical Infrastructure Defense Program; GLM-5.3 Fast, Qwen-Image-2.1-Turbo, Microsoft Decision-1 (one-liners). Next flags: Anthropic investor day Oct 14; Large 4 weights/license; Gemini 3.5 Pro/Argon GA; Qwen 4; AA scoring of Haiku 5.5/GPT-6.1 Sol/Argon; primary AISI report. Unverified, not covered: aggregator claim of OpenAI training pause; "90% classified workloads moved."
 
 
