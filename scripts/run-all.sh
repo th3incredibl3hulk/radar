@@ -64,7 +64,7 @@ for agent in "${AGENTS[@]}"; do
   if ! "${CLAUDE}" --agent "${agent}" \
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
-    --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" "Agent(article-summarizer)" \
+    --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" \
     --print \
     -p "Generate today's report. Today is ${TODAY}."
   then
