@@ -65,7 +65,6 @@ for agent in "${AGENTS[@]}"; do
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
     --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" \
-    "Edit(/${REPO}/.claude/agent-memory/**)" \
     --print \
     -p "Generate today's report. Today is ${TODAY}."
   then
@@ -78,6 +77,10 @@ for agent in "${AGENTS[@]}"; do
     echo "!! ${agent} exited clean but wrote no ${domain}-news-${TODAY}.md — counting as failed"
   else
     SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+    # Memory is the dedup log. A report with no memory change means next cycle re-covers this one.
+    if [ -z "$(git status --porcelain -- "memory/${agent}")" ]; then
+      echo "!! ${agent} wrote its report but did not update memory/${agent}/ — next run may re-cover it"
+    fi
   fi
 done
 
@@ -116,7 +119,7 @@ echo "==> Digest written to ${DIGEST}"
 # Agent memory goes too: it's each reporter's dedup log, so losing it means the
 # next cycle re-reports old news. Previously only reports/ was staged, leaving
 # every agent's memory local-only and one `git clean` from gone.
-git add reports/ .claude/agent-memory/
+git add reports/ memory/
 if git diff --cached --quiet; then
   echo "==> No report changes to commit"
 else

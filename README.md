@@ -93,7 +93,7 @@ Adding a domain is one agent file + one `reports/<domain>/` dir + a line in `run
 
 ## Customize before relying on it
 
-1. **Paths** — agents write to `reports/<domain>/` and remember in `.claude/agent-memory/<agent>/`. Adjust to your layout.
+1. **Paths** — agents write to `reports/<domain>/` and remember in `memory/<agent>/`. Adjust to your layout.
 2. **Sources** — prune or add to each agent's tiered list as your interests sharpen.
 3. **Cadence** — weekly by default; 2-week rolling window. Change in the agents and cron.
 4. **Model** — Sonnet is the cost/quality sweet spot; bump to Opus for deeper synthesis. Article fetching runs on Haiku via `article-summarizer` regardless of the reporter's own model.
