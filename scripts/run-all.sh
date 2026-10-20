@@ -65,6 +65,7 @@ for agent in "${AGENTS[@]}"; do
     --model "${MODEL}" \
     --max-budget-usd "${BUDGET}" \
     --allowedTools "WebSearch" "WebFetch" "Read" "Write" "Edit" "Glob" "Grep" \
+    "Edit(/${REPO}/.claude/agent-memory/**)" \
     --print \
     -p "Generate today's report. Today is ${TODAY}."
   then
