@@ -1,6 +1,6 @@
 ---
 title: Frontier Watch — State of the Art
-date: 2026-10-19
+date: 2026-10-26
 author: Frontier Watch Reporter Agent
 tags: [frontier, models, capabilities, summary]
 ---
@@ -8,6 +8,8 @@ tags: [frontier, models, capabilities, summary]
 # Frontier Watch — State of the Art
 
 ## Overview
+
+**Update 2026-10-26:** Meta is now a frontier vendor in its own right. Muse Wonder / Wonder Full (Oct 12, backfilled) score about 52 / 56 on the Artificial Analysis Index (press figures) against Opus 5.5 at 58, priced at Opus parity ($4/$20), closed, with the top model gated to Meta's own Muse Code subscribers. In-week, OpenAI's "Patch the Planet" (Oct 22) showed GPT Sol-assisted discovery of critical PHP flaws (patched Oct 21; credit disputed by Cloudflare and others), the clearest real-world sign that frontier models now find severe bugs in core internet software. Anthropic published distillation defenses (Oct 12; reasoning summarized, claimed 90–99% reduction in harvested data) and an independent-evaluator tiering (Oct 15; METR top tier, vendor-controlled). DeepSeek open-sourced DeepInfer (Oct 20, Apache 2.0, Nvidia + Huawei Ascend). Unverified: a Latent Space headline claims "Kimi 3.1 Pro" open weights (Oct 24); I could not corroborate it. Still pending: Mistral Large 4 weights (end of October, no licence), Gemini 4 / 3.5 Pro, a public Anthropic S-1. Sections below not fully rewritten; see the 2026-10-26 news report.
 
 **Update 2026-10-19:** A quiet week; no top-lab flagship shipped. Anthropic's Oct 14 investor day apparently happened, but the only post-event account I found is opinion-leaning (45% QoQ growth, negative reaction to slowing growth), and there is still no public S-1; marketing is still reported for the week of Nov 9. NVIDIA shipped Nemotron 3.5 Super VL (Oct 15, open, 120B/12B active; AA 26.5, so efficiency not capability) and xAI reportedly launched Grok Voice 3.0 (single source). OpenAI's next flagship is reportedly still gated on alignment work, with "one or two" models expected by year-end (secondhand). Gemini 3.5 Pro, Qwen 4, DeepSeek V4.1 Pro and Mistral Large 4 weights remain unconfirmed. No Who's-Ahead changes. Sections below are not rewritten; see the 2026-10-19 news report.
 
@@ -30,6 +32,7 @@ Two other threads moved. xAI finally broke its growing unreleased-backlog logjam
 - **xAI / SpaceXAI**: Broke its own logjam — Grok 4.7 shipped on the API (Sept 21) after three cycles of a growing unreleased backlog. Larger base model than 4.6, longer RL run on hard/many-hour tasks, 500K context, text+image, configurable reasoning (incl. new "xhigh"), unchanged pricing vs. 4.6. Scores 46 on the refreshed AA Index — one tracker credits this with pushing xAI into the top 4 labs. Grok 4.8, 4.9, and Grok 5 remain unshipped and unpriced.
 - **Meta**: Muse (Sept 8 launch, built on Muse Spark) crossed 3.4M downloads this cycle and got real follow-through at Meta Connect (Sept 23): video chat via a new "Muse Realtime Avatar" system, Mac computer-use support, dedicated email, more connectors, smart-glasses integration planned. Zuckerberg calls it "the centerpiece of our vision." Still closed API distribution, not open weights — now the strongest commercial validation yet of that bet.
 
+- **2026-10-26 deltas:** Meta Muse Wonder (API, $4/$20) and Wonder Full (Muse Code only) shipped Oct 12 as Meta's first frontier-class models, roughly Sonnet 5.5 level per AA. OpenAI: Patch the Planet security program ($1B Daybreak access commitment). Anthropic: distillation defenses, evaluator tiers. Google/xAI: no model news.
 - **2026-10-05 deltas:** Anthropic added Sonnet 5.5 (Sept 28; $2/$10; AA Index #3 at 56.0 per trackers) and set an Oct 14 investor day. OpenAI shipped dots, GPT-6.1 Sol, Agents API w/ computer use, and Bedrock Managed Agents (preview). Meta published six Muse Spark math papers (Oct 2; contested — roughly half the "open problems" allegedly already solved) and Muse app ~5M downloads. Google/xAI: no model news.
 
 ### Open-weight — Mistral, DeepSeek, Qwen, Moonshot, Z.AI, Tencent, Thinking Machines
@@ -70,7 +73,7 @@ The cost story moved to the closed-frontier tier this cycle: OpenAI's GPT-6 Luna
 |------------|-----------|-------------|---------------|
 | General reasoning | GPT-6/5.6 Sol (AA Index v4.3.2: 58.9%) | Claude Opus 5.5 (57.6%), GPT-6 Terra (55.0%) | 2026-09-22 — new #1 via cost-tier release, displacing Fable 5.1/Astra tie |
 | Agentic / long-horizon | OpenAI on productization (dots, Agents API, Bedrock Managed Agents); Claude on demonstrated autonomy (26% of Anthropic R&D) | Meta Muse (Mac computer-use), Anthropic | 2026-09-29 — DevDay shipped the persistent-agent category (vendor-reported, no independent evals yet) |
-| Coding | Claude Sonnet 5.5 / Opus 5.5 / Fable 5.1 (vendor-reported) | GPT-6.1 Sol (~1/5 Astra price), GPT-6 Sol, Grok 4.7, DeepSeek V4.1 Flash | 2026-09-28 — Sonnet 5.5 narrows the mid/top tier gap |
+| Coding | Claude Sonnet 5.5 / Opus 5.5 / Fable 5.1 (vendor-reported) | Meta Muse Wonder Full (vendor claim, Muse Code only), GPT-6.1 Sol (~1/5 Astra price), GPT-6 Sol, Grok 4.7, DeepSeek V4.1 Flash | 2026-10-12 — Meta claims an edge on long-horizon coding; unreplicated |
 | Multimodal | Qwen3.8-Omni-Flash (text/image/audio/video, 1M context) | Grok 4.7 (text+image, new), Meta Muse Realtime Avatar, xAI Grok Voice Think Fast 2.0 | 2026-09-18 — Qwen's omni model is the new open-weight high-water mark |
 | Long context | Qwen3.8-Omni-Flash (1M) / Meta Muse Spark 1.3 (1M, 98.5% retrieval) / Kimi K3 (1M) | Grok 4.7 (500K), Gemini 3.5 Pro (rumored 2M, still unshipped) | 2026-09-18 — new entrant ties existing leaders |
 | Cost-efficiency | OpenAI GPT-6 Luna ($0.10/$0.50 per M) | Claude Opus 5.5 (40% cheaper than Opus 5), DeepSeek V4.1 Flash ($0.15-0.30/M, MIT) | 2026-09-22 — cost story moves to closed frontier for the first time in several cycles |
@@ -88,6 +91,8 @@ Built out a full GPT-6 cost ladder in three weeks (Astra Sept 3, then Sol/Luna S
 No update this cycle (confirmed via direct sweep) — Gemini 3.5 Pro remains unshipped, 4+ months past its original tease, with no new date or public signal since last cycle's "testing with partners" framing.
 
 ### Meta
+**Update 2026-10-26:** Muse Wonder / Wonder Full (Oct 12) are Meta's first frontier-class models: Opus-parity pricing, closed, best model gated to its own coding-agent subscription. The bet is developer seats via Muse Code, not API share. Independent scores trail the leaders, and Meta's benchmark claims are vendor-reported.
+
 The strongest cycle yet for the Muse pivot: real download momentum (3.4M+) plus genuine product follow-through at Connect 2026 (avatar video chat, Mac computer-use, smart-glasses roadmap) rather than just a launch spike. Computer-use on Mac specifically puts Muse into direct functional overlap with Anthropic's and OpenAI's computer-use products — worth tracking whether Meta's consumer distribution edge ever converts into an enterprise foothold.
 
 ### The open-weight & Chinese labs
@@ -99,16 +104,17 @@ Intensity 0 (quiet) → 5 (on fire).
 
 | Trend                     | 1mo ago | 2wk ago | Last | Now | Direction |
 |---------------------------|---------|---------|------|-----|-----------|
-| Reasoning models          | 4       | 4       | 4    | 4   | → (no leader change; no flagship shipped 10-12 to 10-19) |
-| Autonomous agents         | 4       | 5       | 4    | 4   | → (Nemotron 3.5 Super VL targets always-on agents; no frontier move) |
-| Coding capability         | 5       | 5       | 5    | 5   | → |
-| Multimodal (voice/video)  | 4       | 4       | 4    | 4   | → (Grok Voice 3.0 single-source; Nemotron VL low-scoring) |
+| Reasoning models          | 4       | 4       | 4    | 4   | → (no leader change; Meta enters at #3-4 tier) |
+| Autonomous agents         | 5       | 4       | 4    | 4   | → (no frontier agent ship this week) |
+| Coding capability         | 5       | 5       | 5    | 5   | → (Meta Muse Code adds a contender) |
+| Multimodal (voice/video)  | 4       | 4       | 4    | 4   | → |
 | Long context              | 4       | 4       | 4    | 4   | → |
-| Cost collapse             | 5       | 5       | 5    | 5   | → |
-| Open-weight catch-up      | 4       | 4       | 4    | 4   | → (Large 4 weights pending; Nemotron entered low on AA) |
-| Chinese labs              | 5       | 4       | 4    | 3   | ↓ (no confirmed ship; Qwen 4/DeepSeek V4.1 Pro still rumors) |
-| Gov't/regulatory involvement in releases | 5 | 4 | 5 | 4 | ↓ (no new gating event this week) |
+| Cost collapse             | 5       | 5       | 5    | 5   | → (DeepInfer lowers self-hosting cost) |
+| Open-weight catch-up      | 4       | 4       | 4    | 4   | → (Large 4 weights pending; Kimi 3.1 Pro unverified) |
+| Chinese labs              | 4       | 4       | 3    | 3   | → (DeepInfer is infra, not a model; Kimi claim unverified) |
+| Gov't/regulatory involvement in releases | 4 | 5 | 4 | 4 | → (security-program framing: Patch the Planet) |
 | Infra/compute consolidation | 4 | 4 | 4 | 4   | → |
+| AI-found vulnerabilities (cyber) | 3 | 4 | 4 | 5 | ↑ (PHP flaws patched Oct 21) |
 
 Directions: ↑ rising, → flat, ↓ cooling, ⇑ surging, ↗ emerging
 
@@ -148,6 +154,8 @@ Directions: ↑ rising, → flat, ↓ cooling, ⇑ surging, ↗ emerging
 - **[2026-10-05]** (confidence: med, horizon: 2mo, status: open, NEW) — At least one of Qwen 4, DeepSeek V4.1 Pro, GLM-5.4/5.5 or Kimi K3.x ships by 2026-12-05 (community-rumored for October). Low bar, but it tests whether the rumor mill is reliable.
 
 ## Changelog
+
+- **[2026-10-26]** — Covered 2026-10-19 to 2026-10-26 plus backfill. Read Anthropic's news page and the Latent Space (ex-smol.ai) issue list directly. New: Meta Muse Wonder/Wonder Full (Oct 12, backfill, missed earlier), OpenAI Patch the Planet / PHP flaws, Anthropic distillation defenses (Oct 12) and evaluator update (Oct 15), DeepSeek DeepInfer (Oct 20). Unverified and flagged: "Kimi 3.1 Pro", OpenAI's 722-math-papers headline (Oct 7). Updated: overview note, Meta strategy, Who's Ahead (coding), trend tracker (added AI-found vulnerabilities row). No predictions resolved. Corrected an earlier note: Anthropic filed a confidential S-1 on June 1 (NPR); the public S-1 is what's pending. No landmark paper met the bar.
 
 - **[2026-10-19]** — Covered 2026-10-12 to 2026-10-19. Thin cycle: Anthropic Oct 14 investor day (held; content unverified), NVIDIA Nemotron 3.5 Super VL + Bolt (Oct 15), Grok Voice 3.0 (single source), OpenAI "one or two models by year-end" (secondhand). Updated: overview note and trend tracker (shifted left, Chinese labs and gov't involvement ticked down). No prediction resolved; no new ones filed (nothing moved them). Newsletter archives (smol.ai, Import AI, Interconnects) did not surface via search, so coverage is likely incomplete. Landscape, capability subsections, Lab Strategy Watch and Who's-Ahead table not rewritten (no changes warranted). No landmark paper.
 

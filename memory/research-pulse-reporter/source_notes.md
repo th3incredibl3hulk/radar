@@ -33,6 +33,13 @@ metadata:
 - "Interconnects" query collides with hardware interconnects; use "Nathan Lambert newsletter" instead.
 - Cost: ~17 standard WebSearch calls ≈ $0.45. No article-summarizer used (primary sites not fetched) — next cycle, fetch OpenAI repo/Bloom blog for primary verification.
 
+## 2026-10-26 cycle notes
+
+- **WebFetch of anthropic.com/research (index) worked and was the best discovery step**: returned 10 dated posts in one call. Do this first every cycle. Individual post URLs (anthropic.com/research/<slug>) also fetch fine; slugs surface via a title search.
+- WebFetch of huggingface.co/papers/trending works (mixes old papers; filter by date).
+- ground.news / the-decoder fetches returned old (Feb/Sept) material — check dates.
+- Cost: ~12 searches/fetches ≈ $0.4. WebSearch for generic "<lab> October 2026" is still near-useless.
+
 ## Gotchas
 
 - OpenAI's openai.com/index/ pages still 403 the article-summarizer's fetch tool (unconfirmed this cycle, not retested, but assume still true). Rely on WebSearch snippets, or third-party technical coverage (e.g. Simon Willison's blog reliably summarizes OpenAI research posts in detail and is fetchable).

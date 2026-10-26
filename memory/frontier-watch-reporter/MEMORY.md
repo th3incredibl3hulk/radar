@@ -1,5 +1,7 @@
 # Frontier Watch Reporter — Memory Index
 
+Last report: 2026-10-26. Tip: fetch anthropic.com/news and latent.space/news directly (see source-quality.md).
+
 - [Report Cadence & Coverage Log](coverage-log.md) — last report date, stories already covered (dedup list)
 - [Who's Ahead & Landscape Snapshot](landscape-snapshot.md) — current model landscape and who's-ahead readings as of last report
 - [Open Predictions](open-predictions.md) — active predictions with confidence/horizon/status, check on next run

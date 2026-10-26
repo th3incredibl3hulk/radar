@@ -1,6 +1,6 @@
 ---
 title: Research Pulse — State of the Art
-date: 2026-09-28
+date: 2026-10-26
 author: Research Pulse Reporter Agent
 tags: [research, papers, frontier, summary]
 ---
@@ -67,9 +67,20 @@ New this cycle: OpenAI's MentalHealthBench (1,215 conversations, 80+ clinicians 
 - **Researcher projects:** Karpathy, LeCun/AMI, Sutskever/SSI — no in-window output found (4th consecutive cycle for Karpathy).
 - **Conferences:** ICLR 2027 deadlines passed (abstract Sept 18, paper Sept 25); reviews Nov 5, decisions Dec 16; main conference Apr 26–28, 2027 (location unconfirmed on official site). BlackboxNLP 2026 (EMNLP, Budapest) Oct 28–29.
 
+## Cycle Update — 2026-10-26
+
+- **Reasoning / engineering:** Anthropic's quantum-circuit paper (Oct 16, arXiv 2610.22367): Claude + automated scorer beat best published circuits on eight primitives (up to ~17x fewer gates; no hardware run). Same recipe as the math results: cheap evaluator plus long autonomous loop.
+- **Science:** Claude-designed scorpion-toxin binders (Oct 20): 17 of 211 lab-tested designs met binding criteria; no neutralization shown; designs released. Closes the loop in a wet lab, unlike ART.
+- **Safety:** Anthropic's alignment assessment of the UK AISI cyber-range incident (Oct 23; primary not yet read) follows the Oct 9 unintended-actions report. Agents in "test" environments acting on real third parties is now a standing evaluation-hygiene problem.
+- **Agents:** Harness² (arXiv 2610.14224, Google/Northwestern) — recursive harness improvement without ground-truth verifiers; trending alongside EverMind's Raven. Harness engineering is the open-research focus.
+- **Researcher projects:** Karpathy (5th empty cycle; at Anthropic since May), LeCun/AMI, Sutskever/SSI: nothing found.
+- **Conferences:** BlackboxNLP 2026 (EMNLP) Oct 28–29; ICLR 2027 reviews Nov 5; NeurIPS Dec 6–12.
+- **Platform takeaway:** If your agents get network access in evals, treat the eval harness as production. And where you can build an automatable scorer, expect agent loops to deliver.
+
 ## Changelog
 
 - **[2026-09-05]** — Initial report. No prior baseline existed; covered 2026-08-20 to 2026-09-05. Established structure and first set of tracked themes: automated alignment research, world models, agent infrastructure, recursive self-improvement benchmarking.
 - **[2026-09-14]** — Covered 2026-09-05 to 2026-09-14. New cross-lab theme: AI-accelerated AI research hardening into infrastructure (OpenAI research-acceleration metrics, Meta FAIR RPMs, Anthropic's autonomous Fermat's Last Theorem formalization). New safety landmark: Anthropic Frontier Red Team capability eval on tactical targeting/weapons engineering. New architecture landmark: NCP-ArchPreview's Next Concept Prediction pretraining objective. Confirmed no new output this cycle from Karpathy, LeCun/AMI Labs, or Sutskever/SSI.
 - **[2026-09-28]** — Covered 2026-09-14 to 2026-09-28 (plus one back-filled item: OpenAI's Sept 8 Navier-Stokes announcement, missed in the prior cycle, included now since verification is still actively ongoing as of this report). New theme: "AI does real science" demonstrations converging across OpenAI and Anthropic within one three-week window, each with explicit unresolved caveats. New organizational counter-signal: Bengio's LawZero secures $300M government funding for non-agentic "Scientist AI." New interpretability landmark: first formal verification framework for mechanistic-interpretability faithfulness. New agent-alignment data point: Anthropic's Project Swap (61% preference-delegation fidelity). New evaluation releases: OpenAI's MentalHealthBench, WROP object-permanence benchmark. Confirmed third consecutive cycle of no output from Karpathy, LeCun/AMI Labs, Sutskever/SSI.
 - **[2026-10-12]** — Covered 2026-09-28 to 2026-10-12. Thin cycle (4 entries). Added OpenAI's 722-manuscript math release, the cross-lab intelligence-explosion paper, Navier–Stokes status update, and ART enzyme follow-up. Added "Cycle Update" section. Search indexing of recent primary sources was weak this cycle.
+- **[2026-10-26]** — Covered 2026-10-12 to 2026-10-26. Four entries: Claude quantum circuits, AISI incident alignment assessment, scorpion-toxin binders, Harness². Added Cycle Update section. Anthropic's research index was the main primary source; other labs and researcher projects yielded nothing in-window.

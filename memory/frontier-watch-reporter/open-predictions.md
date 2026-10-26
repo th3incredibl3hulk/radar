@@ -5,6 +5,8 @@ metadata:
   type: project
 ---
 
+Update 2026-10-26: no predictions resolved or added. Mistral Large 4 weights due Oct 31 (check licence). Distillation-defense news is relevant to the open distillation-accusation prediction (Anthropic named GLM-5.3 and Kimi again Oct 12; no new lab accused beyond those).
+
 Update 2026-10-12: NEW (all open) - no GPT-6.1 Astra by 2027-01-12 (med); second lab gates/discloses autonomy-honesty regression (med, 3mo); Mistral Large 4 weights by Oct 31 with restricted license and outside top-5 open (med, 6mo). Strengthened: Mistral-below-Chinese-tier, Gemini 4 before 3.5 Pro GA. Mirror only; SOTA doc is source of truth.
 
 

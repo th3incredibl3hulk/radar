@@ -5,6 +5,9 @@ metadata:
   type: reference
 ---
 
+## Update 2026-10-26
+- Axios Markets and ING Think surfaced in-window market items when general searches failed; CNN returns HTTP 451 to WebFetch; FT is paywalled (use secondaries, label them). The extended-mode query "AI economy news this week <date>" was the only one that found the Warsh speech (missed by the 10-19 report). Run it every cycle.
+
 ## Update 2026-09-21
 - NBER conference pages (e.g. "Economics of Artificial Intelligence, Fall 2026") are a good discovery channel for papers being actively discussed/discussed-live, not just new working-paper numbers — surfaces discussant reception (e.g. Avi Goldfarb on Brynjolfsson-Hitzig) that a plain NBER working-paper search misses. Worth checking each cycle during conference season (spring/fall).
 - NBER PDF working papers reliably fail WebFetch/article-summarizer (binary/compressed stream, not text-extractable) — go straight to a second WebSearch for the abstract/findings (search the working-paper number + "abstract findings") rather than dispatching article-summarizer to the PDF URL; the NBER HTML paper landing page (nber.org/papers/wXXXXX) sometimes also fails to fetch, but a targeted WebSearch on the paper number reliably surfaces abstract-level content from secondary discussion (SSRN, Altiorem, X/econ-twitter) even when the primary PDF doesn't render.

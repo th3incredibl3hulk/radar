@@ -7,6 +7,11 @@ metadata:
 
 Snapshot as of 2026-09-28. Verify current state before quoting in future reports — names and versions have been shifting fast.
 
+## 2026-10-26 update
+- **Codex CLI 0.164.0** (Oct 23, primary: learn.chatgpt.com/docs/changelog; old developers.openai.com/codex/changelog redirects there). Prior carry-forward rust-v0.162.1.
+- **Kimi K3.1 Pro** (Oct 23): $2/$10, API only, weights promised Nov 4. Artificial Analysis 55 vs Opus 5.5 at 58 (via Willison).
+- **Agent Skills** now governed by AAIF (Linux Foundation) as of Oct 22.
+
 ## 2026-10-05 update
 - **Claude Code**: v2.1.287 (Oct 1, Mods), v2.1.289 (Oct 3). **Sonnet 5.5** Sept 28 ($2/$10, 1M ctx).
 - **OpenAI**: GPT-6.1 Sol ($2/$10) Sept 29; Ultrafast tier 6x price; Codex Cloud; Pro $500 tier.

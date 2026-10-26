@@ -5,6 +5,8 @@ metadata:
   type: project
 ---
 
+Delta 2026-10-26: Meta Muse Wonder Full (AA 56) / Wonder (52) enter below Opus 5.5 (58), above nothing new; closed, Opus-parity price. Coding contested by Meta's vendor claim. Open-weight row: Kimi 3.1 Pro unverified. Trend tracker has new row "AI-found vulnerabilities" (now 5). Leaders unchanged otherwise.
+
 Delta 2026-10-12: Open-weight AA leaders GLM-5.3 (45), Kimi K3 (44), DeepSeek V4.1 Flash (39), Mistral Large 4 (38). Cost floor now shared: GPT-6 Luna and Haiku 5.5 at $0.10/$0.50. Agentic: OpenAI autonomy story dented (Astra 6.1 shelved, AISI). Google: Gemini 4 Argon gated; 3.5 Pro still unshipped. Full Who's Ahead table is in the 10-12 news report; the SOTA doc's landscape/lab-strategy sections were NOT rewritten this cycle (still 09-28 + deltas) - do a full rewrite next cycle.
 
 

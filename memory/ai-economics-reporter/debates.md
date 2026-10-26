@@ -5,6 +5,9 @@ metadata:
   type: project
 ---
 
+## Update 2026-10-26
+Systemic-risk thread moved from institutional warnings to price action: AI credit (CoreWeave bonds >15%, data-center bonds reportedly below par) plus Fed Chair Warsh (10-16) framing AI capex as an inflationary demand shock. Contrarian trajectory: IMF models a direct unwind at ~0.4% of global GDP; TSMC/ASML orders still exceed capacity. Watch: confirmed Anthropic growth figures, hyperscaler Q3 capex guidance, FOMC 10-28.
+
 ## Update 2026-09-21
 Distribution of gains: concentration now documented at national/firm/individual-worker AND local-geographic scale. Two NBER Fall 2026 conference papers add substance: Brynjolfsson & Hitzig give the concentration trend its clearest theoretical mechanism yet (AI erodes decentralized decision-making's informational advantage — Hayek 1945 reversed); Alvarez/Argente/Chow/Van Patten's causally-identified data-center paper shows the same dynamic at the county level (local jobs/wages/tax revenue up, but redistribution within the county from renters/ratepayers to property owners). Magnitude and displacement-timeline debates: no movement this cycle (BLS Q3 productivity and Challenger Sept both off-cycle). Systemic/bubble-risk chorus: still 5 institutions (Fed/BoE/IMF/ECB/BIS), no 6th joined; compute-market tightening (Nebius +20% price hike) and capex-to-CFO ratio (93%, up from 33% in 2023) are new granular data points feeding the same unresolved structural-risk thread, not a resolution either way.
 
